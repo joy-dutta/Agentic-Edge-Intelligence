@@ -15,7 +15,7 @@ dependencies = [
   "traci==1.27.1",
   "sumolib==1.27.1",
   "numpy==1.26.4",
-  "scipy==1.17.1",
+  "scipy==1.18.1",
   "pandas==3.0.5",
   "matplotlib==3.11.1",
   "seaborn==0.13.2",
