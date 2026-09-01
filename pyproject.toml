@@ -14,7 +14,7 @@ dependencies = [
   "eclipse-sumo==1.27.1",
   "traci==1.27.1",
   "sumolib==1.27.1",
-  "numpy==1.26.4",
+  "numpy==2.5.2",
   "scipy==1.17.1",
   "pandas==3.0.5",
   "matplotlib==3.11.1",
