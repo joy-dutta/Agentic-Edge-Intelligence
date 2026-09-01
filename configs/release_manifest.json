@@ -1,11 +1,11 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-01T22:25:45.049320+00:00",
+  "created_utc": "2026-09-01T22:35:35.955837+00:00",
   "files": [
     {
-      "bytes": 259,
+      "bytes": 380,
       "path": ".dockerignore",
-      "sha256": "89a2595e64cfe0d4b2222391e5730d5f0b210d630f806107c3bd9cd02f6caa99"
+      "sha256": "b282d01b726aea104d00705463c729dc6c33611928de8327eb9c1d07eadbc8e1"
     },
     {
       "bytes": 155,
@@ -45,7 +45,7 @@
     {
       "bytes": 1404,
       "path": ".github/workflows/ci.yml",
-      "sha256": "3160f8b76837cc3b3837f71d604b2afe644c648d7d2ac7e73b8b389ae026f805"
+      "sha256": "dfd8ce6d5b7b83315373a1f1a93d292b5994e11878a4c6c47d4271482f6cd8eb"
     },
     {
       "bytes": 681,
@@ -83,14 +83,14 @@
       "sha256": "57399885c9d4b904f542b17b1117e3f10f66f321f5aa2c189decda97d28a1c09"
     },
     {
-      "bytes": 620,
+      "bytes": 615,
       "path": "artifacts/tables/idqn_placement_paired.csv",
-      "sha256": "a5f2e3d8557a5843f381232ff7854af50e6c904a2961804465402d356fdc6679"
+      "sha256": "ca200a77882a0155da4a743eb7b7b0bdef88ad6829d91bf7c52c6f0d0325ce18"
     },
     {
-      "bytes": 558,
+      "bytes": 549,
       "path": "artifacts/tables/idqn_placement_summary.csv",
-      "sha256": "e7f0d6a7ec58cc6b53ff9e291badc68b325bd179aa973cfcc495aa0f4e256ba1"
+      "sha256": "7160ac4d88b00e071fbccd53bbb9f63e42d01e818aa1c36d225dd8a1a6653c2e"
     },
     {
       "bytes": 45107,
@@ -138,24 +138,24 @@
       "sha256": "18966a0897b2890085fe771fce29c9a83539dd236b9aa868c41255dabb15ce5a"
     },
     {
-      "bytes": 345,
+      "bytes": 332,
       "path": "artifacts/tables/pcap_reconciliation_cloud.json",
-      "sha256": "fc1b516a857e9920f42a5bbdfeb4b8084663b031df3fcb7a109d224f3e47411b"
+      "sha256": "032523c3a31282ed38ff77d0ee41adc0da8ecd7b1564020bd85c5e80d0c7eeeb"
     },
     {
-      "bytes": 344,
+      "bytes": 331,
       "path": "artifacts/tables/pcap_reconciliation_edge.json",
-      "sha256": "418b164dbabd2efdc14e1412200f0e73ed07835528533010e0bf115b34fd6c8c"
+      "sha256": "09e23de5e828c92efe361610e6a5479975d1f31d0225294d51a6bd56aac12f5f"
     },
     {
-      "bytes": 2,
+      "bytes": 1,
       "path": "artifacts/tables/pilot_corrected_v4_paired_comparisons.csv",
-      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
     },
     {
-      "bytes": 4794,
+      "bytes": 4745,
       "path": "artifacts/tables/pilot_corrected_v4_summary.csv",
-      "sha256": "8a9d180cd2f0edb9e5a2dd66757f146fc81ba347c686a3f023b48914d4cb6b94"
+      "sha256": "23b80ce592f6c26636a11b17d2b9fe097432a563905b10e786419d4764d4ad95"
     },
     {
       "bytes": 57239,
@@ -223,19 +223,19 @@
       "sha256": "e60e79835f7d967fe91417dde125f16f94e274b70d31b3146d3614c34af3b436"
     },
     {
-      "bytes": 3171,
+      "bytes": 3070,
       "path": "checkpoints/idqn_100episodes/learning_curve.csv",
-      "sha256": "e9e6e2ae0de1de68b87655970c853736dafac95e1316b4b30a7590fea4ee1485"
+      "sha256": "20d5349ce8312ed29a14e074cebfc4dcb28aec9ab31ca6f0da2be3a760401229"
     },
     {
-      "bytes": 1478,
+      "bytes": 1448,
       "path": "checkpoints/idqn_100episodes/manifest.json",
-      "sha256": "20cf80581bff5075b974ef84001820df4b2552dc17474f702a93afa83fea5d34"
+      "sha256": "fc472bbcb7ffc3816ea6a413e36b4ae7e1bd3bee5b42364c07e94cb3864cff78"
     },
     {
-      "bytes": 19369,
+      "bytes": 18568,
       "path": "checkpoints/idqn_100episodes/resco_training_config.json",
-      "sha256": "9a8a23e2a420c51dc9da4432810f95de28fd747954810332e13ff9945415f895"
+      "sha256": "c719315873e8c0e8d46d5822e37d4fd26a3dc42a252840c18c6887466effe056"
     },
     {
       "bytes": 547,
@@ -253,14 +253,14 @@
       "sha256": "93a8a076a5372ba8ef28cf6f3fbaadd6569cdc77e0baa62d506cb87accd06d98"
     },
     {
-      "bytes": 1205,
+      "bytes": 1166,
       "path": "configs/budget_manifest_primary.json",
-      "sha256": "147934ee276743e45c88a9aa9ad40f2750e679613a59b837bafa836800045fdf"
+      "sha256": "59f6a021b5a0a41c86cb8bbccd40f30c4647e07501f49b5f91a77882cfecc21f"
     },
     {
-      "bytes": 1207,
+      "bytes": 1168,
       "path": "configs/budget_manifest_validation.json",
-      "sha256": "64ddb9d358cd43786ac6fbcc57cea41e0240548dd6e9154e758a40f31b299b1b"
+      "sha256": "b9288d46cd40231f26c379a64583bdb03a0ca9b9ad20046b218fdcb33c35eef2"
     },
     {
       "bytes": 4056,
@@ -338,14 +338,14 @@
       "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
     },
     {
-      "bytes": 3284,
+      "bytes": 3243,
       "path": "data/processed/idqn_placement_results.csv",
-      "sha256": "098c8b3cfebcf3ac63048c4b7d60caba288ae523d4b818ebeff2f184186c2f2b"
+      "sha256": "2f6e02e648e31e7c46ef5c8ba4993a59d337a30aa2aa6b4ae538247fe1ff7a5c"
     },
     {
-      "bytes": 5720,
+      "bytes": 5711,
       "path": "data/processed/pilot_corrected_v4_run_level_results.csv",
-      "sha256": "231d29dc7193fd497c4847400c1dbeb79793c7000b8d4033e9b02ae942a55b83"
+      "sha256": "a33d654e73dfebd76f448a22107a6a1714042dca4e17dedeae2320c5ac5767d2"
     },
     {
       "bytes": 68465,
@@ -443,9 +443,9 @@
       "sha256": "2510b06cea574a08cc06986a0ee90a5f24842985e2ef2c809cae0d8340de9cf0"
     },
     {
-      "bytes": 1087,
+      "bytes": 1066,
       "path": "LICENSE",
-      "sha256": "18837d2f227af9536550ff3963a60a12904f3b24a5a1bbbdaa1f6d317fd4521a"
+      "sha256": "e49a599c4d545ef9712186ec9ea8cd6b3f0a51b769e07f54ddf44c6d85692e4d"
     },
     {
       "bytes": 190,
