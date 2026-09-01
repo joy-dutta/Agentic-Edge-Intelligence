@@ -1,0 +1,29 @@
+FROM python@sha256:09f7da3bc104798d0afb40bc08d23ab2da20a76130cec1f2ef170848f5d85217
+
+LABEL org.opencontainers.image.title="Governed Agentic Edge Traffic Control"
+LABEL org.opencontainers.image.source="https://github.com/joy-dutta/Agentic-Edge-Intelligence"
+LABEL org.opencontainers.image.licenses="MIT"
+
+WORKDIR /workspace
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        git \
+        libatomic1 \
+        libexpat1 \
+        libgl1 \
+        libx11-6 \
+        libxext6 \
+        libxrender1 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.lock pyproject.toml README.md LICENSE ./
+RUN python -m pip install --no-cache-dir -r requirements.lock
+
+COPY . .
+RUN python -m pip install --no-cache-dir --no-deps -e .
+
+ENV PYTHONPATH=/workspace/src
+ENTRYPOINT []
+CMD ["python", "scripts/verify_release.py"]
+

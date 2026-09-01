@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-edge-traffic-poc"
+version = "1.0.0"
+description = "Reproducible SUMO/RESCO evaluation of governed LLM-assisted edge traffic control"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = {text = "MIT"}
+authors = [{name = "Joy Dutta"}]
+dependencies = [
+  "eclipse-sumo==1.27.1",
+  "traci==1.27.1",
+  "sumolib==1.27.1",
+  "numpy==1.26.4",
+  "scipy==1.17.1",
+  "pandas==3.0.5",
+  "matplotlib==3.11.1",
+  "seaborn==0.13.2",
+  "scikit-learn==1.9.0",
+  "statsmodels==0.15.0",
+  "openai==3.6.0",
+  "pydantic==2.13.5",
+  "paho-mqtt==2.1.0",
+  "tiktoken==0.13.0",
+  "jsonschema==4.26.0",
+  "PyYAML==6.0.3",
+  "psutil==7.2.2",
+  "pyarrow==25.0.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "pytest-cov==7.1.0"]
+idqn = [
+  "torch==2.13.0",
+  "pfrl==0.4.0",
+  "gym==0.26.2",
+  "quik-config==1.9.1",
+]
+
+[project.scripts]
+agentic-edge-poc = "ojcoms_poc.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.coverage.run]
+branch = true
+source = ["ojcoms_poc"]

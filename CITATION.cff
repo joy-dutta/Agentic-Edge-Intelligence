@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or its released result tables, please cite this repository."
+title: "Governed Agentic Edge Traffic Control: Reproducible SUMO/RESCO Proof of Concept"
+type: software
+authors:
+  - family-names: Dutta
+    given-names: Joy
+repository-code: "https://github.com/joy-dutta/Agentic-Edge-Intelligence"
+license: MIT
+version: 1.0.0
+date-released: 2026-09-02
+keywords:
+  - agentic edge intelligence
+  - bounded autonomy
+  - policy shield
+  - traffic signal control
+  - SUMO
+  - RESCO
+  - reproducibility
+

@@ -1,0 +1,49 @@
+scenario,controller,metric,metric_label,n_runs,estimate,ci95_low,ci95_high,summary_statistic
+S2,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),2,80.21948513511057,68.96959276018099,91.46937751004016,mean_of_runs
+S2,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),2,281.37,215.7,347.04,median_of_run_values
+S2,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),2,378.5,295.0,462.0,median_of_run_values
+S2,cloud_maxpressure,emergency_trip_time_s,Emergency trip time (s),2,453.5,433.0,474.0,mean_of_runs
+S2,cloud_maxpressure,completed_trips,Completed trips,2,1990.5,1989.0,1992.0,mean_of_runs
+S2,cloud_maxpressure,max_total_queue,Maximum total queue,2,126.5,98.0,155.0,mean_of_runs
+S2,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),2,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,2,8777247.5,8776874.0,8777621.0,mean_of_runs
+S2,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),2,77.16862402697231,75.24436372745491,79.09288432648972,mean_of_runs
+S2,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),2,238.02,220.68,255.36,median_of_run_values
+S2,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),2,345.5,329.0,362.0,median_of_run_values
+S2,coordinated_maxpressure,emergency_trip_time_s,Emergency trip time (s),2,432.0,424.0,440.0,mean_of_runs
+S2,coordinated_maxpressure,completed_trips,Completed trips,2,1996.5,1996.0,1997.0,mean_of_runs
+S2,coordinated_maxpressure,max_total_queue,Maximum total queue,2,113.5,108.0,119.0,mean_of_runs
+S2,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,mean_time_loss_s,Mean time loss (s),2,57.87049733532933,57.79082999999999,57.95016467065868,mean_of_runs
+S2,fixed,p95_time_loss_s,P95 time loss (s),2,140.64,137.67,143.61,median_of_run_values
+S2,fixed,p95_trip_time_s,P95 trip time (s),2,260.0,259.0,261.0,median_of_run_values
+S2,fixed,emergency_trip_time_s,Emergency trip time (s),2,108.0,108.0,108.0,mean_of_runs
+S2,fixed,completed_trips,Completed trips,2,2002.0,2000.0,2004.0,mean_of_runs
+S2,fixed,max_total_queue,Maximum total queue,2,108.5,106.0,111.0,mean_of_runs
+S2,fixed,max_spillback_duration_s,Maximum spillback duration (s),2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,wan_application_bytes,WAN application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,peer_application_bytes,Peer application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,proposed_unsafe_actions,Proposed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,blocked_unsafe_actions,Blocked policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,fixed,executed_unsafe_actions,Executed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,mean_time_loss_s,Mean time loss (s),2,54.78641864217772,51.69287202380953,57.87996526054591,mean_of_runs
+S2,local_maxwave,p95_time_loss_s,P95 time loss (s),2,176.91,161.38,192.44,median_of_run_values
+S2,local_maxwave,p95_trip_time_s,P95 trip time (s),2,248.5,238.0,259.0,median_of_run_values
+S2,local_maxwave,emergency_trip_time_s,Emergency trip time (s),2,403.5,401.0,406.0,mean_of_runs
+S2,local_maxwave,completed_trips,Completed trips,2,2015.5,2015.0,2016.0,mean_of_runs
+S2,local_maxwave,max_total_queue,Maximum total queue,2,106.0,101.0,111.0,mean_of_runs
+S2,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,wan_application_bytes,WAN application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,peer_application_bytes,Peer application bytes/h,2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,proposed_unsafe_actions,Proposed policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,blocked_unsafe_actions,Blocked policy violations,2,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,executed_unsafe_actions,Executed policy violations,2,0.0,0.0,0.0,mean_of_runs

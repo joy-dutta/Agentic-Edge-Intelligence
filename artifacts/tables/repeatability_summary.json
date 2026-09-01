@@ -1,0 +1,11 @@
+{
+  "api_cost_usd": 0.19445146,
+  "calls": 250,
+  "failed_calls": 4,
+  "mean_agent_modal_agreement": 0.502,
+  "repetitions": 5,
+  "states": 50,
+  "states_all_repetitions_valid": 48,
+  "states_with_exactly_one_output": 0,
+  "valid_calls": 246
+}

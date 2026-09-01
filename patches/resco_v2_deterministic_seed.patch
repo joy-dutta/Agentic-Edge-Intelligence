@@ -1,0 +1,60 @@
+diff --git a/resco_benchmark/agents/action_value/pfrl_dqn.py b/resco_benchmark/agents/action_value/pfrl_dqn.py
+index dad562f..a017cad 100644
+--- a/resco_benchmark/agents/action_value/pfrl_dqn.py
++++ b/resco_benchmark/agents/action_value/pfrl_dqn.py
+@@ -252 +252,3 @@ class DQNAgent(Agent):
+-        checkpoint = torch.load(agt_path + ".pt", map_location=self.device)
++        checkpoint = torch.load(
++            agt_path + ".pt", map_location=self.device, weights_only=False
++        )
+@@ -264,0 +265 @@ class DQNAgent(Agent):
++        self.agent.training = True
+@@ -268,0 +270 @@ class DQNAgent(Agent):
++        self.agent.training = False
+diff --git a/resco_benchmark/main.py b/resco_benchmark/main.py
+index 00bd1b0..f00a2a4 100644
+--- a/resco_benchmark/main.py
++++ b/resco_benchmark/main.py
+@@ -4,0 +5,4 @@ import importlib
++import random
++
++import numpy as np
++import torch
+@@ -48,0 +53,6 @@ def run_trial():
++    if cfg.seed is not None:
++        experiment_seed = int(cfg.seed)
++        random.seed(experiment_seed)
++        np.random.seed(experiment_seed)
++        torch.manual_seed(experiment_seed)
++        torch.use_deterministic_algorithms(True, warn_only=True)
+diff --git a/resco_benchmark/multi_signal.py b/resco_benchmark/multi_signal.py
+index 81b7a06..a5cc20e 100644
+--- a/resco_benchmark/multi_signal.py
++++ b/resco_benchmark/multi_signal.py
+@@ -4,0 +5 @@ import pickle
++import random
+@@ -59,0 +61 @@ class MultiSignal(gym.Env):
++        self.network_rng = random.Random(int(cfg.seed or 0))
+@@ -265,2 +266,0 @@ class MultiSignal(gym.Env):
+-                "--random",
+-                "True",
+@@ -293,0 +294,8 @@ class MultiSignal(gym.Env):
++        if cfg.seed is None:
++            sumo_cmd += ["--random", "True"]
++        else:
++            seed_cycle = int(getattr(cfg, "seed_cycle", 1) or 1)
++            seed_origin = int(getattr(cfg, "seed_episode_origin", 0) or 0)
++            episode_index = max(0, self.cumulative_episode - seed_origin)
++            episode_seed = int(cfg.seed) + episode_index % seed_cycle
++            sumo_cmd += ["--seed", str(episode_seed)]
+@@ -433,3 +439,7 @@ class MultiSignal(gym.Env):
+-        for signal in self.signals:
+-            self.signals[signal].switch_phase(act[signal])
+-        for __ in range(cfg.step_length):
++        action_delay_s = int(getattr(cfg, "action_delay_s", 0) or 0)
++        action_loss_rate = float(getattr(cfg, "action_loss_rate", 0.0) or 0.0)
++        action_delivered = self.network_rng.random() >= action_loss_rate
++        for elapsed_s in range(cfg.step_length):
++            if action_delivered and elapsed_s == action_delay_s:
++                for signal in self.signals:
++                    self.signals[signal].switch_phase(act[signal])

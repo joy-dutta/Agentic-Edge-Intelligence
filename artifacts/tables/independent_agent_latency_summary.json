@@ -1,0 +1,13 @@
+{
+  "api_cost_usd": 0.0530534,
+  "call_latency_p50_s": 1.5451929139999265,
+  "call_latency_p95_s": 2.7199011233515193,
+  "calls": 200,
+  "corridor_states": 25,
+  "exact_intent_agreement_with_batched": 0.13,
+  "failed_calls": 0,
+  "logical_agents_per_state": 8,
+  "parallel_batch_wall_latency_p50_s": 2.267360912002914,
+  "parallel_batch_wall_latency_p95_s": 4.895085297798502,
+  "valid_calls": 200
+}

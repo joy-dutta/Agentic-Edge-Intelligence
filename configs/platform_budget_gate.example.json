@@ -1,0 +1,11 @@
+{
+  "hard_limit_verified": false,
+  "platform_limit_type": "soft",
+  "platform_soft_limit_usd": 20.0,
+  "user_acknowledged_soft_limit": false,
+  "local_hard_cap_authorized": false,
+  "local_hard_limit_usd": 16.0,
+  "protocol_deviation_documented": false,
+  "verified_utc": null,
+  "verification_note": "Prefer a verified hard Platform limit. Use the soft/local-hard path only with explicit user acknowledgement and a documented pre-call protocol deviation."
+}

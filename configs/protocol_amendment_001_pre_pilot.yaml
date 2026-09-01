@@ -1,0 +1,76 @@
+amendment_id: pre_pilot_001
+created_utc: "2026-08-31T06:41:45Z"
+stage: before_billable_api_calls
+pilot_outcomes_viewed: true
+live_or_confirmatory_outcomes_viewed: false
+changes:
+  - issue: RESCO v2 accepted a seed option but did not pass it to SUMO or seed Python, NumPy, and Torch.
+    correction: Apply patches/resco_v2_deterministic_seed.patch and cycle only the declared training seeds.
+    scientific_effect: Enables repeatable IDQN training; no hypothesis, policy threshold, prompt, or evaluation seed changed.
+  - issue: The exact-response replay acceptance gate was specified but not implemented.
+    correction: Add a strict replay supervisor bound to source hash, model, observation time, request kind, and canonical payload hash.
+    scientific_effect: Adds a reproducibility check only; live decisions and controller semantics are unchanged.
+  - issue: S3 declared one stale peer summary, but the injector activated stale/replayed data only in S4.
+    correction: Inject an authenticated 15-second-old peer summary in S3 and retain the stale-plus-replayed attack in S4.
+    scientific_effect: Makes execution match the frozen scenario declaration; timings and thresholds are unchanged.
+  - issue: Trust-attack success and API-outage recovery lacked explicit run-level denominators.
+    correction: Count unverified emergency-priority proposals under unauthenticated false claims, accepted instances, and time to the first accepted post-outage intent.
+    scientific_effect: Adds metrics only; controller actions are unchanged.
+  - issue: Initial offline pilot runs showed pressure-controller chattering and a weak coordinated baseline.
+    correction: Preserve the current phase on tied or marginal pressure, require a 10-second controller hold, and require a pressure gain above 2 vehicles before switching. The physical 5-second minimum-green threshold is unchanged.
+    scientific_effect: Pilot-seed controller stabilization before any final seed or live agentic outcome; all affected pilot controllers must be rerun.
+  - issue: Cloud actions were logged when sent but not when their delayed delivery reached the executor.
+    correction: Log each delivered cloud action and report actual executor signal-change counts for every controller.
+    scientific_effect: Observability correction only; action delivery and controller behavior are unchanged.
+  - issue: RESCO IDQN testing disabled replay updates but left the PFRL policy in epsilon-greedy training mode.
+    correction: Set the underlying PFRL agent training flag in RESCO training() and testing(), making checkpoint evaluation greedy and frozen.
+    scientific_effect: Corrects evaluation semantics only; the 100-episode training process is unchanged.
+  - issue: Warm-up sensitivity, approach fairness, and fallback denominators were declared but not emitted at run level.
+    correction: Add post-five-minute trip metrics, Jain fairness over per-lane mean wait, and separate policy, unavailable-service, and stale-response fallback counts with an explicit opportunity denominator.
+    scientific_effect: Adds predeclared measurements only; simulation and controller behavior are unchanged.
+  - issue: Existing corrected pilot summaries predated the complete measurement schema and lacked vehicle insertion counts and teleport causes needed for the demand-equivalence gate.
+    correction: Add loaded, inserted, end-running, end-waiting, and cause-specific teleport fields and rerun every controller under a clean pilot_corrected_v2 phase.
+    scientific_effect: Prevents mixed-schema pilot evidence and measures route-loss bias directly; controller behavior, scenarios, and seeds are unchanged.
+  - issue: Official RESCO IDQN had no paired cloud-placement evaluation path.
+    correction: Add evaluation-only seeded action-message loss and integer-second delayed actuation; local defaults remain zero, while the N2 cloud profile uses one discretized second and 0.5 percent loss.
+    scientific_effect: Uses the same frozen IDQN checkpoints and state/action definitions to isolate placement; training behavior is unchanged and sub-second RTT is conservatively rounded to SUMO's one-second step.
+  - issue: The initial supervisor prompt said it could not override the local controller, conflicting with the declared bounded choice between approved local and coordinated strategies.
+    correction: Clarify each intent's deterministic mapping, trusted-input conditions, and fail-closed use while retaining every frozen policy limit and prohibition on direct actuation.
+    scientific_effect: Resolves an interface ambiguity before any billable call or agentic outcome; the prompt is frozen after the corrected live pilot begins.
+  - issue: The response schema required exactly eight intents, making the registered one-call-per-logical-agent latency audit impossible with the same schema.
+    correction: Permit one to eight intents in the schema while retaining exact identity and order checks against every request.
+    scientific_effect: Enables the registered independent-agent microbenchmark; the main corridor request still supplies and requires exactly eight identities.
+  - issue: RESCO checkpoint loading relied on PyTorch's pre-2.6 default unrestricted unpickling and fails under the pinned PyTorch 2.13 runtime.
+    correction: Load only the locally generated, SHA-256-manifested RESCO checkpoints with an explicit weights_only=False compatibility option.
+    scientific_effect: Restores the upstream checkpoint format under modern PyTorch; training, model weights, state/action definitions, and greedy evaluation behavior are unchanged.
+  - issue: RESCO creates a two-vehicle tripinfo_0 initialization probe and increments its counter before the first real test, which otherwise shifts a declared 2101-2120 evaluation cycle to 2102-2121.
+    correction: Add an explicit evaluation-only episode origin of one, exclude tripinfo_0, and map real files 1-20 exactly to seeds 2101-2120. Preserve the training origin of zero and correct the learning-curve seed labels to its actual shifted cycle.
+    scientific_effect: Aligns paired evaluation files with the declared untouched seeds; checkpoint weights and the completed training sequence are unchanged.
+  - issue: SUMO 1.27.1 deterministically terminated during coordinated pilot seed 1102 while all-network SSM measurement was active, leaving a truncated trace at simulation time 26388. Disabling teleportation and reducing SSM device sampling to 10 percent did not eliminate the native crash; an otherwise identical zero-SSM diagnostic completed.
+    correction: Match RESCO by disabling teleportation for every architecture, retain all-vehicle TTC/PET/DRAC measurement only on edges adjoining the eight controlled junctions using SUMO's documented SSM filter, add SUMO log and error-log files, and rerun all pilot cells under clean phase pilot_corrected_v4.
+    scientific_effect: Removes an unrelated malformed junction from the safety-measurement domain while retaining surrogate-safety measurement wherever controller actions can directly affect traffic. Demand, controllers, events, test seeds, and policy thresholds are unchanged; unfinished and end-running vehicles remain fully reported.
+  - issue: The intended USD 20 OpenAI Platform project budget is a soft budget rather than the originally requested enforceable hard Platform limit.
+    correction: Record the Platform control honestly as soft, require explicit user acknowledgement, retain the lower USD 16 cumulative local hard ceiling and all phase ceilings, and persist a worst-case reservation before every request so an interrupted process cannot regain budget headroom.
+    scientific_effect: This is a financial-risk control deviation before any billable call; models, prompts, hypotheses, controllers, scenarios, seeds, analysis, and scientific acceptance gates are unchanged. The limitation must remain visible in the reproducibility report.
+  - issue: Corrected pilot artifact labels such as pilot_corrected_v4 were rejected by the live gate even though the SUMO runner already assigned their API calls to the pilot budget ledger.
+    correction: Map only pilot-prefixed artifact labels to the registered pilot budget phase at orchestration, and reject every other unknown live phase.
+    scientific_effect: Restores the declared corrected-pilot output location without changing prompts, controllers, scenarios, seeds, call ceilings, or the USD 1 pilot allowance. The failed preflight attempt made no API request.
+  - issue: The first incomplete live pilot attempt reached the 900-token response ceiling at simulated time 28080, producing truncated JSON after 25 valid calls. No completed traffic summary was produced or inspected.
+    correction: Use the model's supported none reasoning effort with a 600-token structured-output ceiling, treat incomplete or schema-invalid billed responses as measured service failures, account their latency, bytes, tokens, and cost, and fail closed to deterministic local control. Archive and rerun the entire affected cell from time 25200.
+    scientific_effect: This pre-completion pilot correction prevents malformed model output from terminating the safety controller and reduces cost. It does not alter prompts, allowed intents, policy thresholds, scenarios, seeds, baselines, or hypotheses; invalid-response frequency and fallback remain reported rather than hidden.
+  - issue: Exact replay reproduced both decision logs and every traffic and safety summary field, but the gate compared nondeterministic wall-clock policy-check timing percentiles measured in different processes.
+    correction: "Treat policy-check runtime percentiles like CPU time, RSS, and wall-clock duration: retain and report them, but exclude them from deterministic scientific-summary equality."
+    scientific_effect: Replay still requires byte-identical action and policy logs plus exact traffic, safety, governance, network, and cost fields. No controller behavior or result is changed.
+  - issue: The post-pilot primary manifest correctly blocked because generic 5000-input and 600-output reservations implied USD 12.068, above the USD 10 primary allocation. In 186 billed calls from completed current-protocol pilot runs, actual input was at most 2917 tokens and schema-valid output was 391-405 tokens.
+    correction: Freeze fail-closed pre-request ceilings of 3500 estimated and billed input tokens and 500 output tokens, and size post-pilot manifests only from the 186 billed calls in completed pilot_corrected_v4 runs. A conservative full v5 rerun was attempted but the cumulative 300-attempt pilot barrier stopped it; its partial and completed cells are preserved and excluded. The exact 500-token contract probe passed, and no valid v4 output exceeded 405 tokens.
+    scientific_effect: Adds at least 19.9 percent input headroom and 23.5 percent valid-output headroom while making the 6896-call registered maximum fit the USD 10 primary allocation. Requests exceeding either cap are blocked before billing. The existing complete v4 pilot remains authoritative because lowering a nonbinding output ceiling does not alter its recorded requests or decisions; no v5 outcome, final seed, policy threshold, prompt, or hypothesis is used for selection.
+  - issue: Serial execution of hundreds of independent one-hour SUMO cells would make the frozen matrix unnecessarily slow on the 32-logical-CPU host.
+    correction: Add optional process-isolated workers, OS-locked transcript appends, and an OS-locked atomic API reservation ledger. Keep each SUMO/TraCI connection, route file, raw directory, and controller state inside one worker process.
+    scientific_effect: Execution order is still derived from the registered shuffle before round-robin dispatch, and every cell retains identical inputs and semantics. Parallelism changes wall-clock scheduling only; final seeds and outcomes had not been run or viewed before this correction.
+unchanged:
+  - hypotheses
+  - test_and_sensitivity_seeds
+  - policy_thresholds
+  - model_snapshots
+  - scenario_event_times
+  - budget_limits

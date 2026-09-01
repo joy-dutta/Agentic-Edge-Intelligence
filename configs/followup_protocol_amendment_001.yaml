@@ -1,0 +1,26 @@
+amendment:
+  name: cologne3_connected_lane_closure
+  applies_to: configs/followup_protocol.yaml
+  created_utc: "2026-08-31T18:31:00Z"
+  timing: before_registered_or_billable_followup_execution
+  reason: >-
+    A non-API structural run on unregistered seed 4999 showed that closing
+    -241660955#10_0 removes the only lane on that edge and causes SUMO to reject
+    otherwise valid routes. No traffic-performance outcome was inspected.
+  original_value:
+    cologne3_incident_lane: "-241660955#10_0"
+  amended_value:
+    cologne3_incident_lane: "-241660955#17_0"
+  justification: >-
+    Edge -241660955#17 has two passenger lanes on a signalized corridor approach.
+    Closing lane 0 preserves route connectivity while creating the intended
+    realistic one-lane capacity restriction.
+  unchanged:
+    - hypothesis
+    - demand_scale
+    - incident_start_and_duration
+    - controllers
+    - model_prompt_and_policy
+    - seeds
+    - metrics_and_decision_rule
+    - stopping_rule_and_budget

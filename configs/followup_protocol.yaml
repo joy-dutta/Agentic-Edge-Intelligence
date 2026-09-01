@@ -1,0 +1,109 @@
+protocol:
+  name: coordination_high_interaction_followup
+  version: 1.0.0
+  frozen_utc: "2026-08-31T18:13:34.016Z"
+  status: exploratory_preregistered_before_execution
+
+observed_failure_mode:
+  initial_verdict: partially_supports
+  finding: >-
+    In the frozen Cologne-8 confirmatory experiment, governed peer-aware control
+    did not significantly improve traffic efficiency over governed no-peer control
+    or local MaxWave. Shared context changed model intents, but a system-level
+    coordination benefit was not demonstrated.
+
+rationale: >-
+  The registered scenarios did not combine elevated corridor demand with a
+  sustained lane closure. That combination creates interacting queues and
+  downstream blockage for which authenticated peer summaries should be useful.
+  A second unmodified RESCO road network checks whether any effect is specific to
+  Cologne-8. This is a bounded diagnostic, not a replacement for the initial null
+  result.
+
+primary_hypothesis: >-
+  Under 1.3x demand and a 900-second central-corridor lane closure, governed
+  peer-aware control reduces paired post-warm-up mean trip time loss relative to
+  the identical governed no-peer controller.
+expected_direction: lower_for_governed_peer_aware
+primary_metric: post_5min_mean_time_loss_s
+
+networks:
+  - name: cologne8
+    config: configs/followup_cologne8.yaml
+    scenario: F1_C8
+    fresh_seeds: [4101, 4102, 4103, 4104, 4105, 4106, 4107, 4108, 4109, 4110]
+  - name: cologne3
+    config: configs/followup_cologne3.yaml
+    scenario: F1_C3
+    fresh_seeds: [4201, 4202, 4203, 4204, 4205, 4206, 4207, 4208, 4209, 4210]
+
+controllers:
+  - agentic_governed
+  - agentic_governed_no_peer
+  - local_maxwave
+  - coordinated_maxpressure
+
+exact_change:
+  demand_scale: 1.3
+  incident: central_corridor_lane_closed
+  incident_start_rel_s: 900
+  incident_duration_s: 900
+  emergency: false
+  network_profile: N1
+  cologne8_incident_lane: "-186623965#16_0"
+  cologne3_incident_lane: "-241660955#10_0"
+
+unchanged_components:
+  - pinned GPT-5.4 nano snapshot and strict response schema
+  - prompt and bounded intent vocabulary
+  - 5-second hard control loop and 120-second supervisory interval
+  - deterministic policy shield and local fail-closed fallback
+  - signal timing limits and fairness override
+  - one-hour RESCO time window and post-five-minute analysis window
+  - full accounting of API, peer, audit, and transport bytes
+  - SUMO 1.27.1 with SSM disabled under protocol amendment 002
+
+secondary_metrics:
+  - post_5min_p95_time_loss_s
+  - maximum_approach_wait_s
+  - max_spillback_duration_s
+  - post_5min_completed_trips
+  - collisions
+  - teleports
+  - executed_unsafe_actions
+  - fallback_rate
+  - peer_application_bytes
+  - agent_wan_application_bytes
+
+decision_rule: >-
+  The coordination claim is supported only if the paired governed-versus-no-peer
+  mean-time-loss difference favors governed by at least 5 percent with a
+  bootstrap 95 percent confidence interval excluding zero on Cologne-8, the
+  direction is consistent on Cologne-3, collisions and teleports remain zero,
+  and no secondary delay or fairness metric degrades by more than 5 percent on
+  both networks. Comparisons with local MaxWave and coordinated max-pressure are
+  reported regardless of outcome. Failure to meet this rule preserves the
+  original partially-supports verdict.
+
+statistics:
+  pairing: same_network_and_seed
+  confidence_interval: paired_BCa_bootstrap_10000_resamples
+  test: two_sided_paired_Wilcoxon
+  multiplicity: Holm_within_metric_family
+
+stopping_rule: >-
+  Run exactly 10 fresh seeds per network and all four controllers. Do not inspect
+  interim traffic outcomes, retune thresholds, add seeds, or select a favorable
+  subset. Stop immediately for a safety/accounting gate failure or a budget gate.
+
+budget:
+  live_api_request_ceiling: 1240
+  maximum_api_cost_usd: 2.50
+  protocol_phase_hard_limit_usd: 3.00
+  model: gpt-5.4-nano-2026-03-17
+
+reporting:
+  preserve_initial_results: true
+  label: exploratory_followup
+  separate_from_confirmatory_tables: true
+  upgrade_requires_holdout_and_second_network: true

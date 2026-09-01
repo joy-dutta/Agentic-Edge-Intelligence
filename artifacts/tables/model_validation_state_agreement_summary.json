@@ -1,0 +1,11 @@
+{
+  "all_eight_exact_agreement_states": 1,
+  "api_cost_usd": 0.1904643,
+  "failed_calls": 0,
+  "logical_agent_outputs": 400,
+  "mean_agent_exact_agreement_rate": 0.33,
+  "mini_latency_p50_s": 2.987576306997653,
+  "mini_latency_p95_s": 4.017837361047714,
+  "states": 50,
+  "valid_calls": 50
+}

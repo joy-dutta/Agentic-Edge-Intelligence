@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/joy-dutta/Agentic-Edge-Intelligence/security/advisories/new
+    about: Report credential, policy-bypass, or evidence-integrity vulnerabilities privately.
+

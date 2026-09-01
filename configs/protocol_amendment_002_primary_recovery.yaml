@@ -1,0 +1,28 @@
+amendment_id: primary_recovery_002
+created_utc: "2026-08-31T14:01:15Z"
+stage: after_partial_offline_primary_before_live_primary
+partial_confirmatory_state:
+  completed_offline_cells: 191
+  interrupted_offline_directories: 6
+  primary_api_attempts: 0
+  comparative_outcomes_analyzed: false
+  live_primary_started: false
+trigger:
+  issue: SUMO 1.27.1 terminated without an application error at simulation time 26390 in the declared S2 coordinated_maxpressure seed 2108 cell while its SSM device was active. The termination reproduced under both the Windows wheel and the pinned Linux wheel. The SUMO log and error log were empty, and the output trace ended at the same simulation time. The same native SSM failure pattern had appeared at time 26388 during the pre-pilot diagnosis.
+  diagnostic: An otherwise identical Linux SUMO 1.27.1 run with SSM probability zero completed the full 25200-28800 interval with 2047 inserted vehicles and 1989 completed trips.
+correction:
+  - Archive and exclude the whole partial primary matrix, including all 191 completed cells, rather than selectively retaining successful SSM-enabled cells.
+  - Rerun every confirmatory cell from the frozen seed list with SSM probability zero.
+  - Record SSM conflict count, TTC, PET, and DRAC as unavailable rather than zero.
+  - Retain SUMO native collision, emergency-braking, emergency-stop, teleport, completed-trip, queue, delay, tail-latency, emergency-response, policy-violation, and blocked-action metrics.
+  - Run the restarted matrix in a pinned Python 3.12 Linux container with eclipse-sumo 1.27.1; this changes the execution environment only.
+scientific_effect: The supplemental surrogate-safety endpoints TTC, PET, and DRAC are withdrawn because the registered simulator cannot produce them reliably for the complete paired matrix. No traffic, latency, coordination, bounded-autonomy, policy, trust, network, cost, scenario, seed, controller, prompt, model, or hypothesis setting is selected or changed based on comparative outcomes. Restarting every cell prevents selective missingness or mixed measurement protocols.
+unchanged:
+  - hypotheses
+  - test_and_sensitivity_seeds
+  - policy_thresholds
+  - model_snapshots
+  - scenario_event_times
+  - budget_limits
+  - controller_algorithms
+  - statistical_analysis_plan

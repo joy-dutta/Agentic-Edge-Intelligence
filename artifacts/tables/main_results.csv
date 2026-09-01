@@ -1,0 +1,384 @@
+scenario,controller,metric,metric_label,n_runs,estimate,ci95_low,ci95_high,summary_statistic
+S0,agentic_governed,mean_time_loss_s,Mean time loss (s),20,41.4969477193968,40.36809923271189,42.613248225383785,mean_of_runs
+S0,agentic_governed,p95_time_loss_s,P95 time loss (s),20,127.105,117.85,137.79500000000002,median_of_run_values
+S0,agentic_governed,p95_trip_time_s,P95 trip time (s),20,221.5,216.0,226.5,median_of_run_values
+S0,agentic_governed,completed_trips,Completed trips,20,2012.4,2010.9,2013.55,mean_of_runs
+S0,agentic_governed,max_total_queue,Maximum total queue,20,62.65,57.9,67.8,mean_of_runs
+S0,agentic_governed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed,wan_application_bytes,WAN application bytes/h,20,394830.45,394715.7,394944.00375,mean_of_runs
+S0,agentic_governed,peer_application_bytes,Peer application bytes/h,20,1858476.15,1858130.445,1858834.20125,mean_of_runs
+S0,agentic_governed,proposed_unsafe_actions,Proposed policy violations,20,14.65,13.1,16.2,mean_of_runs
+S0,agentic_governed,blocked_unsafe_actions,Blocked policy violations,20,14.65,13.05,16.15,mean_of_runs
+S0,agentic_governed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed_no_peer,mean_time_loss_s,Mean time loss (s),20,41.812030950286285,41.049630574899865,42.65901003147639,mean_of_runs
+S0,agentic_governed_no_peer,p95_time_loss_s,P95 time loss (s),20,124.36,120.06,128.765,median_of_run_values
+S0,agentic_governed_no_peer,p95_trip_time_s,P95 trip time (s),20,224.5,221.5,230.5,median_of_run_values
+S0,agentic_governed_no_peer,completed_trips,Completed trips,20,2013.05,2011.6,2014.35,mean_of_runs
+S0,agentic_governed_no_peer,max_total_queue,Maximum total queue,20,60.55,56.3,66.6,mean_of_runs
+S0,agentic_governed_no_peer,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed_no_peer,wan_application_bytes,WAN application bytes/h,20,302920.4,302865.55,302980.10124999995,mean_of_runs
+S0,agentic_governed_no_peer,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed_no_peer,proposed_unsafe_actions,Proposed policy violations,20,4.4,3.2,5.7,mean_of_runs
+S0,agentic_governed_no_peer,blocked_unsafe_actions,Blocked policy violations,20,4.4,3.25,5.65,mean_of_runs
+S0,agentic_governed_no_peer,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_governed_no_peer,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_unguarded,mean_time_loss_s,Mean time loss (s),20,40.75782258031936,39.66355138687569,41.84211974492656,mean_of_runs
+S0,agentic_unguarded,p95_time_loss_s,P95 time loss (s),20,118.59,109.495,138.365,median_of_run_values
+S0,agentic_unguarded,p95_trip_time_s,P95 trip time (s),20,222.5,215.5,227.0,median_of_run_values
+S0,agentic_unguarded,completed_trips,Completed trips,20,2012.0,2010.65,2013.2,mean_of_runs
+S0,agentic_unguarded,max_total_queue,Maximum total queue,20,63.85,58.1,70.75,mean_of_runs
+S0,agentic_unguarded,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_unguarded,wan_application_bytes,WAN application bytes/h,20,394844.0,394574.3475,395081.51125,mean_of_runs
+S0,agentic_unguarded,peer_application_bytes,Peer application bytes/h,20,1858469.65,1858000.6837499999,1858941.4,mean_of_runs
+S0,agentic_unguarded,proposed_unsafe_actions,Proposed policy violations,20,17.95,15.85,20.15,mean_of_runs
+S0,agentic_unguarded,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,agentic_unguarded,executed_unsafe_actions,Executed policy violations,20,17.95,15.9,20.15124999999998,mean_of_runs
+S0,agentic_unguarded,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,77.83376664842181,68.83515496715928,87.24551860974275,mean_of_runs
+S0,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),20,63.18837475656973,61.291045259804356,64.90716870602814,mean_of_runs
+S0,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),20,212.98000000000002,188.26999999999998,220.845,median_of_run_values
+S0,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),20,297.0,288.0,304.5,median_of_run_values
+S0,cloud_maxpressure,completed_trips,Completed trips,20,1995.5,1993.1,1997.85,mean_of_runs
+S0,cloud_maxpressure,max_total_queue,Maximum total queue,20,114.8,107.2,122.55,mean_of_runs
+S0,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,20,8777505.05,8777113.24375,8777891.706249999,mean_of_runs
+S0,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),20,66.53938421372621,63.562814635950545,69.7628049397105,mean_of_runs
+S0,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),20,222.235,197.5,244.47,median_of_run_values
+S0,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),20,303.5,290.0,315.0,median_of_run_values
+S0,coordinated_maxpressure,completed_trips,Completed trips,20,1998.8,1996.05,2001.35,mean_of_runs
+S0,coordinated_maxpressure,max_total_queue,Maximum total queue,20,129.6,121.24875,138.15,mean_of_runs
+S0,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,mean_time_loss_s,Mean time loss (s),20,48.56396782687251,48.171946538482125,48.950781783173795,mean_of_runs
+S0,fixed,p95_time_loss_s,P95 time loss (s),20,128.66,125.49,131.61,median_of_run_values
+S0,fixed,p95_trip_time_s,P95 trip time (s),20,246.0,242.0,247.5,median_of_run_values
+S0,fixed,completed_trips,Completed trips,20,2001.95,2001.05,2002.8,mean_of_runs
+S0,fixed,max_total_queue,Maximum total queue,20,67.85,66.7,68.95,mean_of_runs
+S0,fixed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,fixed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,mean_time_loss_s,Mean time loss (s),20,41.626252628794944,41.005967176060786,42.23060534768636,mean_of_runs
+S0,local_maxwave,p95_time_loss_s,P95 time loss (s),20,122.94,121.45,128.87,median_of_run_values
+S0,local_maxwave,p95_trip_time_s,P95 trip time (s),20,224.5,222.0,226.5,median_of_run_values
+S0,local_maxwave,completed_trips,Completed trips,20,2013.55,2012.8,2014.25,mean_of_runs
+S0,local_maxwave,max_total_queue,Maximum total queue,20,57.95,55.75,60.1,mean_of_runs
+S0,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S0,local_maxwave,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S1,agentic_governed,mean_time_loss_s,Mean time loss (s),10,53.02394050851092,50.376546450256164,55.873213829181466,mean_of_runs
+S1,agentic_governed,p95_time_loss_s,P95 time loss (s),10,167.34500000000003,146.54,191.45499999999998,median_of_run_values
+S1,agentic_governed,p95_trip_time_s,P95 trip time (s),10,255.0,241.0,276.0,median_of_run_values
+S1,agentic_governed,completed_trips,Completed trips,10,2405.8,2398.5,2415.2,mean_of_runs
+S1,agentic_governed,max_total_queue,Maximum total queue,10,81.6,76.2,86.7,mean_of_runs
+S1,agentic_governed,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,agentic_governed,wan_application_bytes,WAN application bytes/h,10,393745.6,391092.6975,395149.41000000003,mean_of_runs
+S1,agentic_governed,peer_application_bytes,Peer application bytes/h,10,1860151.4,1859595.2975,1860674.02,mean_of_runs
+S1,agentic_governed,proposed_unsafe_actions,Proposed policy violations,10,15.6,13.1,18.0,mean_of_runs
+S1,agentic_governed,blocked_unsafe_actions,Blocked policy violations,10,15.6,13.1,18.0,mean_of_runs
+S1,agentic_governed,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,agentic_governed,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",10,0.0,0.0,0.0,mean_of_runs
+S1,agentic_unguarded,mean_time_loss_s,Mean time loss (s),10,53.444924983420925,50.897318438554194,56.71421568189226,mean_of_runs
+S1,agentic_unguarded,p95_time_loss_s,P95 time loss (s),10,157.46499999999997,150.99,178.89,median_of_run_values
+S1,agentic_unguarded,p95_trip_time_s,P95 trip time (s),10,251.5,244.0,261.0,median_of_run_values
+S1,agentic_unguarded,completed_trips,Completed trips,10,2401.6,2393.5,2410.1025,mean_of_runs
+S1,agentic_unguarded,max_total_queue,Maximum total queue,10,87.3,79.0,95.8,mean_of_runs
+S1,agentic_unguarded,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,agentic_unguarded,wan_application_bytes,WAN application bytes/h,10,393919.0,391133.27999999997,395418.815,mean_of_runs
+S1,agentic_unguarded,peer_application_bytes,Peer application bytes/h,10,1860178.6,1859661.7,1860670.0175,mean_of_runs
+S1,agentic_unguarded,proposed_unsafe_actions,Proposed policy violations,10,20.3,16.5,24.0,mean_of_runs
+S1,agentic_unguarded,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,agentic_unguarded,executed_unsafe_actions,Executed policy violations,10,20.3,16.5,23.9,mean_of_runs
+S1,agentic_unguarded,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",10,86.99712643678161,70.41594827586208,103.08838772577995,mean_of_runs
+S1,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),10,74.79892450757525,70.30565032708122,79.49345703563031,mean_of_runs
+S1,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),10,243.355,215.48,258.54,median_of_run_values
+S1,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),10,331.0,297.0,352.0,median_of_run_values
+S1,cloud_maxpressure,completed_trips,Completed trips,10,2378.0,2368.9,2387.5,mean_of_runs
+S1,cloud_maxpressure,max_total_queue,Maximum total queue,10,139.7,129.1,150.1,mean_of_runs
+S1,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,10,8781414.9,8780947.9,8781933.5025,mean_of_runs
+S1,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),10,89.93558424258468,79.19362869566248,101.11698317416881,mean_of_runs
+S1,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),10,274.19,231.9,385.26,median_of_run_values
+S1,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),10,382.5,319.0,509.0,median_of_run_values
+S1,coordinated_maxpressure,completed_trips,Completed trips,10,2380.9,2373.9,2387.6,mean_of_runs
+S1,coordinated_maxpressure,max_total_queue,Maximum total queue,10,159.1,143.0,177.1,mean_of_runs
+S1,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,mean_time_loss_s,Mean time loss (s),10,60.35051033720335,59.36148993593221,61.39776732873254,mean_of_runs
+S1,fixed,p95_time_loss_s,P95 time loss (s),10,183.54500000000002,178.88,192.825,median_of_run_values
+S1,fixed,p95_trip_time_s,P95 trip time (s),10,274.0,269.0,284.0,median_of_run_values
+S1,fixed,completed_trips,Completed trips,10,2388.4,2381.0,2396.4,mean_of_runs
+S1,fixed,max_total_queue,Maximum total queue,10,88.8,85.2,92.6,mean_of_runs
+S1,fixed,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,fixed,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,mean_time_loss_s,Mean time loss (s),10,50.0368974519588,48.854321407699224,51.3319576905692,mean_of_runs
+S1,local_maxwave,p95_time_loss_s,P95 time loss (s),10,147.71499999999997,138.07,157.265,median_of_run_values
+S1,local_maxwave,p95_trip_time_s,P95 trip time (s),10,246.5,239.0,255.0,median_of_run_values
+S1,local_maxwave,completed_trips,Completed trips,10,2406.5,2397.5,2416.7,mean_of_runs
+S1,local_maxwave,max_total_queue,Maximum total queue,10,77.1,72.8,82.5,mean_of_runs
+S1,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S1,local_maxwave,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed,mean_time_loss_s,Mean time loss (s),20,53.59680198097275,52.34044749257489,54.964769876818444,mean_of_runs
+S2,agentic_governed,p95_time_loss_s,P95 time loss (s),20,167.935,158.78,176.89,median_of_run_values
+S2,agentic_governed,p95_trip_time_s,P95 trip time (s),20,246.5,240.5,252.5,median_of_run_values
+S2,agentic_governed,emergency_trip_time_s,Emergency trip time (s),20,401.7,377.04875,418.55,mean_of_runs
+S2,agentic_governed,completed_trips,Completed trips,20,2013.85,2012.45,2015.1,mean_of_runs
+S2,agentic_governed,max_total_queue,Maximum total queue,20,101.85,97.6,106.85,mean_of_runs
+S2,agentic_governed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed,wan_application_bytes,WAN application bytes/h,20,408242.4,407921.19875000004,408458.3525,mean_of_runs
+S2,agentic_governed,peer_application_bytes,Peer application bytes/h,20,1858488.3,1858153.6412499999,1858820.50625,mean_of_runs
+S2,agentic_governed,proposed_unsafe_actions,Proposed policy violations,20,15.1,13.6,16.7,mean_of_runs
+S2,agentic_governed,blocked_unsafe_actions,Blocked policy violations,20,15.1,13.6,16.7,mean_of_runs
+S2,agentic_governed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed_no_peer,mean_time_loss_s,Mean time loss (s),20,53.66010286137456,52.67772356107766,54.772288215216946,mean_of_runs
+S2,agentic_governed_no_peer,p95_time_loss_s,P95 time loss (s),20,174.33,170.18,181.95999999999998,median_of_run_values
+S2,agentic_governed_no_peer,p95_trip_time_s,P95 trip time (s),20,248.5,246.0,257.5,median_of_run_values
+S2,agentic_governed_no_peer,emergency_trip_time_s,Emergency trip time (s),20,379.9,334.29625,415.25,mean_of_runs
+S2,agentic_governed_no_peer,completed_trips,Completed trips,20,2013.6,2012.95,2014.2,mean_of_runs
+S2,agentic_governed_no_peer,max_total_queue,Maximum total queue,20,102.4,98.1,107.25,mean_of_runs
+S2,agentic_governed_no_peer,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed_no_peer,wan_application_bytes,WAN application bytes/h,20,313343.7,313286.54875,313408.30124999996,mean_of_runs
+S2,agentic_governed_no_peer,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed_no_peer,proposed_unsafe_actions,Proposed policy violations,20,4.65,3.35,5.95,mean_of_runs
+S2,agentic_governed_no_peer,blocked_unsafe_actions,Blocked policy violations,20,4.65,3.35,5.95,mean_of_runs
+S2,agentic_governed_no_peer,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_governed_no_peer,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_unguarded,mean_time_loss_s,Mean time loss (s),20,55.07810011628985,53.054978298647065,57.1523471956947,mean_of_runs
+S2,agentic_unguarded,p95_time_loss_s,P95 time loss (s),20,160.41,147.195,178.225,median_of_run_values
+S2,agentic_unguarded,p95_trip_time_s,P95 trip time (s),20,254.5,247.0,258.0,median_of_run_values
+S2,agentic_unguarded,emergency_trip_time_s,Emergency trip time (s),20,381.15,331.79875,416.2,mean_of_runs
+S2,agentic_unguarded,completed_trips,Completed trips,20,2012.1,2010.05,2013.85125,mean_of_runs
+S2,agentic_unguarded,max_total_queue,Maximum total queue,20,101.3,96.55,106.1,mean_of_runs
+S2,agentic_unguarded,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_unguarded,wan_application_bytes,WAN application bytes/h,20,408367.0,408218.44875000004,408520.25625,mean_of_runs
+S2,agentic_unguarded,peer_application_bytes,Peer application bytes/h,20,1858401.85,1857870.27625,1858876.41875,mean_of_runs
+S2,agentic_unguarded,proposed_unsafe_actions,Proposed policy violations,20,20.05,17.75,22.75,mean_of_runs
+S2,agentic_unguarded,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,agentic_unguarded,executed_unsafe_actions,Executed policy violations,20,20.05,17.65,22.7,mean_of_runs
+S2,agentic_unguarded,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,83.04112704592406,73.00349346496107,93.89299453096032,mean_of_runs
+S2,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),20,83.7079693759408,80.07542471693553,87.75135103324136,mean_of_runs
+S2,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),20,255.72000000000003,233.215,294.885,median_of_run_values
+S2,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),20,357.0,326.5,391.0,median_of_run_values
+S2,cloud_maxpressure,emergency_trip_time_s,Emergency trip time (s),20,425.95,387.79875,455.80125,mean_of_runs
+S2,cloud_maxpressure,completed_trips,Completed trips,20,1992.6,1989.2,1996.05,mean_of_runs
+S2,cloud_maxpressure,max_total_queue,Maximum total queue,20,133.85,124.5,144.25124999999997,mean_of_runs
+S2,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,20,8777560.1,8777012.64625,8778098.452499999,mean_of_runs
+S2,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),20,91.40481669593487,86.27926361791158,97.43862666120093,mean_of_runs
+S2,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),20,279.70500000000004,272.72,332.735,median_of_run_values
+S2,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),20,380.5,364.5,438.0,median_of_run_values
+S2,coordinated_maxpressure,emergency_trip_time_s,Emergency trip time (s),20,440.25,432.6,448.40124999999995,mean_of_runs
+S2,coordinated_maxpressure,completed_trips,Completed trips,20,1998.25,1996.0,2000.6,mean_of_runs
+S2,coordinated_maxpressure,max_total_queue,Maximum total queue,20,143.3,131.94875,155.95124999999996,mean_of_runs
+S2,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,mean_time_loss_s,Mean time loss (s),20,58.58003190318364,58.08760711055146,59.07692641305955,mean_of_runs
+S2,fixed,p95_time_loss_s,P95 time loss (s),20,140.615,136.84,145.89,median_of_run_values
+S2,fixed,p95_trip_time_s,P95 trip time (s),20,258.0,256.0,260.0,median_of_run_values
+S2,fixed,emergency_trip_time_s,Emergency trip time (s),20,108.1,107.85,108.35,mean_of_runs
+S2,fixed,completed_trips,Completed trips,20,2003.1,2002.35,2003.9,mean_of_runs
+S2,fixed,max_total_queue,Maximum total queue,20,103.6,100.8,106.1,mean_of_runs
+S2,fixed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,fixed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,mean_time_loss_s,Mean time loss (s),20,55.031037934881944,53.75670725987998,56.377544237291374,mean_of_runs
+S2,local_maxwave,p95_time_loss_s,P95 time loss (s),20,176.485,172.655,181.865,median_of_run_values
+S2,local_maxwave,p95_trip_time_s,P95 trip time (s),20,250.5,247.0,260.5,median_of_run_values
+S2,local_maxwave,emergency_trip_time_s,Emergency trip time (s),20,411.9,403.1,421.5,mean_of_runs
+S2,local_maxwave,completed_trips,Completed trips,20,2014.4,2013.75,2015.05,mean_of_runs
+S2,local_maxwave,max_total_queue,Maximum total queue,20,108.1,101.55,115.35,mean_of_runs
+S2,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S2,local_maxwave,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_governed,mean_time_loss_s,Mean time loss (s),20,51.636601562768405,50.71933232929289,52.62039462380676,mean_of_runs
+S3,agentic_governed,p95_time_loss_s,P95 time loss (s),20,162.66,151.58499999999998,166.74,median_of_run_values
+S3,agentic_governed,p95_trip_time_s,P95 trip time (s),20,239.0,237.5,243.5,median_of_run_values
+S3,agentic_governed,emergency_trip_time_s,Emergency trip time (s),20,359.9,312.09625,402.70124999999996,mean_of_runs
+S3,agentic_governed,completed_trips,Completed trips,20,2014.4,2013.75,2015.05,mean_of_runs
+S3,agentic_governed,max_total_queue,Maximum total queue,20,96.25,93.05,99.35,mean_of_runs
+S3,agentic_governed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_governed,wan_application_bytes,WAN application bytes/h,20,412770.0,408115.31124999997,416906.605,mean_of_runs
+S3,agentic_governed,peer_application_bytes,Peer application bytes/h,20,1855487.05,1855084.64625,1855899.15875,mean_of_runs
+S3,agentic_governed,proposed_unsafe_actions,Proposed policy violations,20,15.05,13.4,16.75,mean_of_runs
+S3,agentic_governed,blocked_unsafe_actions,Blocked policy violations,20,15.05,13.4,16.7,mean_of_runs
+S3,agentic_governed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_governed,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_unguarded,mean_time_loss_s,Mean time loss (s),20,53.89596962352665,52.493427873651136,55.507869738485894,mean_of_runs
+S3,agentic_unguarded,p95_time_loss_s,P95 time loss (s),20,166.345,157.815,172.505,median_of_run_values
+S3,agentic_unguarded,p95_trip_time_s,P95 trip time (s),20,245.0,241.5,251.0,median_of_run_values
+S3,agentic_unguarded,emergency_trip_time_s,Emergency trip time (s),20,328.35,273.9975,378.05,mean_of_runs
+S3,agentic_unguarded,completed_trips,Completed trips,20,2012.95,2011.85,2014.0,mean_of_runs
+S3,agentic_unguarded,max_total_queue,Maximum total queue,20,101.4,94.9,108.3,mean_of_runs
+S3,agentic_unguarded,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_unguarded,wan_application_bytes,WAN application bytes/h,20,415271.05,411398.65375,418602.065,mean_of_runs
+S3,agentic_unguarded,peer_application_bytes,Peer application bytes/h,20,1855444.8,1854973.8875,1855853.7575,mean_of_runs
+S3,agentic_unguarded,proposed_unsafe_actions,Proposed policy violations,20,22.75,20.6,25.2,mean_of_runs
+S3,agentic_unguarded,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,agentic_unguarded,executed_unsafe_actions,Executed policy violations,20,22.75,20.55,25.101249999999983,mean_of_runs
+S3,agentic_unguarded,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",20,98.7690212173579,89.36957612236785,108.84331969527216,mean_of_runs
+S3,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),20,80.0379545838496,76.22119490754108,83.91873302029246,mean_of_runs
+S3,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),20,237.24,222.37,255.3,median_of_run_values
+S3,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),20,335.5,322.0,355.5,median_of_run_values
+S3,cloud_maxpressure,emergency_trip_time_s,Emergency trip time (s),20,389.05,339.05,433.3,mean_of_runs
+S3,cloud_maxpressure,completed_trips,Completed trips,20,1995.15,1992.05,1998.3,mean_of_runs
+S3,cloud_maxpressure,max_total_queue,Maximum total queue,20,122.95,117.2,129.2,mean_of_runs
+S3,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,20,8778009.4,8777610.995,8778427.25375,mean_of_runs
+S3,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),20,78.81131266600302,74.97501362934143,82.67910806165605,mean_of_runs
+S3,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),20,243.82,226.715,266.225,median_of_run_values
+S3,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),20,334.0,312.0,356.5,median_of_run_values
+S3,coordinated_maxpressure,emergency_trip_time_s,Emergency trip time (s),20,319.0,265.7975,372.2,mean_of_runs
+S3,coordinated_maxpressure,completed_trips,Completed trips,20,1997.75,1993.9,2001.4,mean_of_runs
+S3,coordinated_maxpressure,max_total_queue,Maximum total queue,20,124.0,117.15,130.75,mean_of_runs
+S3,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,mean_time_loss_s,Mean time loss (s),20,58.58003190318364,58.100505093671565,59.06580807722191,mean_of_runs
+S3,fixed,p95_time_loss_s,P95 time loss (s),20,140.615,136.84,145.89,median_of_run_values
+S3,fixed,p95_trip_time_s,P95 trip time (s),20,258.0,256.0,260.0,median_of_run_values
+S3,fixed,emergency_trip_time_s,Emergency trip time (s),20,108.1,107.85,108.35,mean_of_runs
+S3,fixed,completed_trips,Completed trips,20,2003.1,2002.3,2003.85,mean_of_runs
+S3,fixed,max_total_queue,Maximum total queue,20,101.2,97.85,104.1,mean_of_runs
+S3,fixed,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,fixed,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,mean_time_loss_s,Mean time loss (s),20,51.79989711815995,50.93077717433733,52.78566355035058,mean_of_runs
+S3,local_maxwave,p95_time_loss_s,P95 time loss (s),20,163.94,156.7,167.755,median_of_run_values
+S3,local_maxwave,p95_trip_time_s,P95 trip time (s),20,238.0,233.5,241.0,median_of_run_values
+S3,local_maxwave,emergency_trip_time_s,Emergency trip time (s),20,361.6,314.1,403.35125,mean_of_runs
+S3,local_maxwave,completed_trips,Completed trips,20,2014.7,2013.8,2015.45,mean_of_runs
+S3,local_maxwave,max_total_queue,Maximum total queue,20,99.3,95.5,103.1,mean_of_runs
+S3,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,wan_application_bytes,WAN application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,peer_application_bytes,Peer application bytes/h,20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,proposed_unsafe_actions,Proposed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,blocked_unsafe_actions,Blocked policy violations,20,0.0,0.0,0.0,mean_of_runs
+S3,local_maxwave,executed_unsafe_actions,Executed policy violations,20,0.0,0.0,0.0,mean_of_runs
+S4,agentic_governed,mean_time_loss_s,Mean time loss (s),10,52.65930625136078,50.48658169523317,55.51288734755504,mean_of_runs
+S4,agentic_governed,p95_time_loss_s,P95 time loss (s),10,158.45,149.75,169.92,median_of_run_values
+S4,agentic_governed,p95_trip_time_s,P95 trip time (s),10,238.5,232.0,251.0,median_of_run_values
+S4,agentic_governed,emergency_trip_time_s,Emergency trip time (s),10,373.0,311.6,421.20249999999993,mean_of_runs
+S4,agentic_governed,completed_trips,Completed trips,10,2015.0,2013.7,2016.3,mean_of_runs
+S4,agentic_governed,max_total_queue,Maximum total queue,10,101.4,91.2,113.1,mean_of_runs
+S4,agentic_governed,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,agentic_governed,wan_application_bytes,WAN application bytes/h,10,439582.6,433978.9,445048.2025,mean_of_runs
+S4,agentic_governed,peer_application_bytes,Peer application bytes/h,10,1855501.0,1855137.0825,1855922.1075000002,mean_of_runs
+S4,agentic_governed,proposed_unsafe_actions,Proposed policy violations,10,13.9,12.3,15.5,mean_of_runs
+S4,agentic_governed,blocked_unsafe_actions,Blocked policy violations,10,13.9,12.3,15.5,mean_of_runs
+S4,agentic_governed,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,agentic_governed,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",10,0.0,0.0,0.0,mean_of_runs
+S4,agentic_unguarded,mean_time_loss_s,Mean time loss (s),10,53.32827983396478,51.36973645678985,55.990178894319556,mean_of_runs
+S4,agentic_unguarded,p95_time_loss_s,P95 time loss (s),10,158.735,149.765,177.62,median_of_run_values
+S4,agentic_unguarded,p95_trip_time_s,P95 trip time (s),10,243.5,235.5,266.0,median_of_run_values
+S4,agentic_unguarded,emergency_trip_time_s,Emergency trip time (s),10,381.4,300.3925,445.8,mean_of_runs
+S4,agentic_unguarded,completed_trips,Completed trips,10,2013.9,2012.0,2015.5,mean_of_runs
+S4,agentic_unguarded,max_total_queue,Maximum total queue,10,101.0,91.6,110.9,mean_of_runs
+S4,agentic_unguarded,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,agentic_unguarded,wan_application_bytes,WAN application bytes/h,10,435608.9,428748.67,442411.4,mean_of_runs
+S4,agentic_unguarded,peer_application_bytes,Peer application bytes/h,10,1855168.2,1854625.3575,1855645.6500000001,mean_of_runs
+S4,agentic_unguarded,proposed_unsafe_actions,Proposed policy violations,10,22.2,19.5,24.8,mean_of_runs
+S4,agentic_unguarded,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,agentic_unguarded,executed_unsafe_actions,Executed policy violations,10,22.2,19.597500000000004,24.7,mean_of_runs
+S4,agentic_unguarded,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",10,91.03770720740967,81.70173744829178,99.92320169096882,mean_of_runs
+S4,cloud_maxpressure,mean_time_loss_s,Mean time loss (s),10,79.7944996091644,75.24097664405227,84.75758892472398,mean_of_runs
+S4,cloud_maxpressure,p95_time_loss_s,P95 time loss (s),10,246.965,218.96,262.06,median_of_run_values
+S4,cloud_maxpressure,p95_trip_time_s,P95 trip time (s),10,318.0,313.0,336.0,median_of_run_values
+S4,cloud_maxpressure,emergency_trip_time_s,Emergency trip time (s),10,454.4,434.2975,474.8,mean_of_runs
+S4,cloud_maxpressure,completed_trips,Completed trips,10,1995.3,1992.1,1998.8,mean_of_runs
+S4,cloud_maxpressure,max_total_queue,Maximum total queue,10,125.0,114.7,139.5,mean_of_runs
+S4,cloud_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,cloud_maxpressure,wan_application_bytes,WAN application bytes/h,10,8777825.2,8777317.69,8778327.1025,mean_of_runs
+S4,cloud_maxpressure,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,cloud_maxpressure,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,cloud_maxpressure,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,cloud_maxpressure,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,mean_time_loss_s,Mean time loss (s),10,73.66501428585134,70.07060655398716,76.54658062235926,mean_of_runs
+S4,coordinated_maxpressure,p95_time_loss_s,P95 time loss (s),10,220.99,205.68,242.39,median_of_run_values
+S4,coordinated_maxpressure,p95_trip_time_s,P95 trip time (s),10,320.5,307.5,343.0,median_of_run_values
+S4,coordinated_maxpressure,emergency_trip_time_s,Emergency trip time (s),10,369.7,311.7925,425.5,mean_of_runs
+S4,coordinated_maxpressure,completed_trips,Completed trips,10,2002.7,1999.0974999999999,2006.2,mean_of_runs
+S4,coordinated_maxpressure,max_total_queue,Maximum total queue,10,115.6,104.2,127.2,mean_of_runs
+S4,coordinated_maxpressure,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,coordinated_maxpressure,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,mean_time_loss_s,Mean time loss (s),10,58.55586787089427,57.70088007449254,59.413774729302325,mean_of_runs
+S4,fixed,p95_time_loss_s,P95 time loss (s),10,139.84,136.19,144.18,median_of_run_values
+S4,fixed,p95_trip_time_s,P95 trip time (s),10,258.0,250.0,262.0,median_of_run_values
+S4,fixed,emergency_trip_time_s,Emergency trip time (s),10,108.1,107.8,108.4,mean_of_runs
+S4,fixed,completed_trips,Completed trips,10,2003.5,2001.9,2005.3,mean_of_runs
+S4,fixed,max_total_queue,Maximum total queue,10,106.6,99.4,113.5,mean_of_runs
+S4,fixed,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,fixed,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,mean_time_loss_s,Mean time loss (s),10,52.59588105445018,50.35017263997945,55.46733683943275,mean_of_runs
+S4,local_maxwave,p95_time_loss_s,P95 time loss (s),10,162.025,157.56,186.425,median_of_run_values
+S4,local_maxwave,p95_trip_time_s,P95 trip time (s),10,235.5,232.0,261.5,median_of_run_values
+S4,local_maxwave,emergency_trip_time_s,Emergency trip time (s),10,361.4,297.9,407.9,mean_of_runs
+S4,local_maxwave,completed_trips,Completed trips,10,2015.4,2014.2,2016.6,mean_of_runs
+S4,local_maxwave,max_total_queue,Maximum total queue,10,99.2,89.0,111.3,mean_of_runs
+S4,local_maxwave,max_spillback_duration_s,Maximum spillback duration (s),10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,wan_application_bytes,WAN application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,peer_application_bytes,Peer application bytes/h,10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,proposed_unsafe_actions,Proposed policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,blocked_unsafe_actions,Blocked policy violations,10,0.0,0.0,0.0,mean_of_runs
+S4,local_maxwave,executed_unsafe_actions,Executed policy violations,10,0.0,0.0,0.0,mean_of_runs

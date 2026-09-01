@@ -1,0 +1,28 @@
+{
+  "phase": "pilot",
+  "registered_utc": "2026-08-31T05:46:03.9859306Z",
+  "model": "gpt-5.4-nano-2026-03-17",
+  "price_verified_utc_date": "2026-08-31",
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-5.4-nano",
+  "prices_per_million_usd": {
+    "input": 0.20,
+    "cached_input": 0.02,
+    "output": 1.25
+  },
+  "planned_request_ceiling": 240,
+  "estimated_tokens_per_request": {
+    "input": 2600,
+    "output_including_reasoning": 400
+  },
+  "worst_case_tokens_per_request": {
+    "input": 3500,
+    "output_including_reasoning": 500
+  },
+  "expected_cost_usd": 0.2448,
+  "worst_case_cost_usd": 0.318,
+  "phase_hard_limit_usd": 1.0,
+  "project_local_hard_limit_usd": 16.0,
+  "platform_requested_limit_usd": 20.0,
+  "proceed": true,
+  "notes": "Unused pilot allowance is not transferred. The ledger authorizes worst-case cost before every attempt."
+}

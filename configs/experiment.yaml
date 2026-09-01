@@ -1,0 +1,147 @@
+protocol:
+  name: ojcoms_agentic_edge_poc
+  version: 1.0.0
+  preregistered_utc: "2026-08-31T05:46:03.9859306Z"
+  resco_commit: f1ed9a174f8de41fc9d8689373b836bc882570dc
+  sumo_version: 1.27.1
+  scenario_license: CC-BY-NC-SA-3.0
+
+paths:
+  resco_root: external/RESCO
+  scenario_dir: external/RESCO/resco_benchmark/environments/cologne8
+  sumocfg: external/RESCO/resco_benchmark/environments/cologne8/cologne8.sumocfg
+  network: external/RESCO/resco_benchmark/environments/cologne8/cologne8.net.xml
+  routes: external/RESCO/resco_benchmark/environments/cologne8/cologne8.rou.xml
+  supervisor_prompt: configs/prompts/supervisor_v1.txt
+  ssm_filter: configs/ssm_controlled_junctions.txt
+  artifacts: artifacts
+
+simulation:
+  begin_s: 25200
+  end_s: 28800
+  step_s: 1
+  ssm_probability: 0.0
+  control_interval_s: 5
+  supervisor_interval_s: 120
+  event_rate_limit_s: 10
+  max_intent_age_s: 10
+  tls_ids:
+    - "247379907"
+    - "252017285"
+    - "256201389"
+    - "26110729"
+    - "280120513"
+    - "32319828"
+    - "62426694"
+    - "cluster_1098574052_1098574061_247379905"
+  test_seeds_primary: [2101, 2102, 2103, 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 2113, 2114, 2115, 2116, 2117, 2118, 2119, 2120]
+  test_seeds_sensitivity: [3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108, 3109, 3110]
+  pilot_seeds: [1101, 1102]
+  training_seeds: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+  validation_seeds: [1001, 1002, 1003]
+
+scenarios:
+  S0:
+    demand_scale: 1.0
+    incident: false
+    emergency: false
+    trust_stress: false
+    sensor_count_error: 0.0
+    sensor_loss: 0.0
+    detector_outage_s: 0
+    network_profile: N0
+  S1:
+    demand_scale: 1.2
+    incident: false
+    emergency: false
+    trust_stress: false
+    sensor_count_error: 0.0
+    sensor_loss: 0.0
+    detector_outage_s: 0
+    network_profile: N1
+  S2:
+    demand_scale: 1.0
+    incident: true
+    emergency: true
+    trust_stress: false
+    sensor_count_error: 0.0
+    sensor_loss: 0.0
+    detector_outage_s: 0
+    network_profile: N1
+  S3:
+    demand_scale: 1.0
+    incident: true
+    emergency: true
+    trust_stress: false
+    sensor_count_error: 0.05
+    sensor_loss: 0.05
+    detector_outage_s: 30
+    network_profile: N3
+  S4:
+    demand_scale: 1.0
+    incident: true
+    emergency: true
+    trust_stress: true
+    sensor_count_error: 0.10
+    sensor_loss: 0.05
+    detector_outage_s: 30
+    network_profile: N3
+
+events:
+  incident_start_rel_s: 1200
+  incident_duration_s: 600
+  incident_lane: "-186623965#16_0"
+  emergency_depart_rel_s: 1500
+  emergency_from_edge: "-186623965#18"
+  emergency_to_edge: "28675510#7"
+  emergency_id: emergency_poc
+  api_outage_start_rel_s: 1450
+  api_outage_duration_s: 10
+  detector_outage_start_rel_s: 1300
+  stale_peer_start_rel_s: 1400
+  malicious_peer_start_rel_s: 1350
+
+network_profiles:
+  N0: {rtt_ms: 0, jitter_ms: 0, loss_rate: 0.0, bandwidth_mbps: 1000, outage_s: 0}
+  N1: {rtt_ms: 10, jitter_ms: 2, loss_rate: 0.001, bandwidth_mbps: 100, outage_s: 0}
+  N2: {rtt_ms: 80, jitter_ms: 20, loss_rate: 0.005, bandwidth_mbps: 20, outage_s: 0}
+  N3: {rtt_ms: 200, jitter_ms: 50, loss_rate: 0.02, bandwidth_mbps: 5, outage_s: 10}
+
+policy:
+  min_green_s: 5
+  yellow_s: 3
+  all_red_s: 2
+  max_green_s: 50
+  max_approach_wait_s: 180
+  max_intent_duration_s: 120
+  max_peer_age_s: 10
+  spillback_occupancy: 0.85
+  action_rate_limit_s: 5
+
+openai:
+  primary_model: gpt-5.4-nano-2026-03-17
+  validation_model: gpt-5.4-mini-2026-03-17
+  reasoning_effort: none
+  max_output_tokens: 500
+  max_estimated_input_tokens: 3500
+  worst_case_billed_input_tokens: 3500
+  store: false
+  prices_per_million:
+    gpt-5.4-nano-2026-03-17: {input: 0.20, cached_input: 0.02, output: 1.25}
+    gpt-5.4-mini-2026-03-17: {input: 0.75, cached_input: 0.075, output: 4.50}
+
+budget:
+  platform_limit_usd: 20.0
+  local_limit_usd: 16.0
+  max_request_attempts: 10000
+  max_retries: 2
+  phase_limits_usd:
+    pilot: 1.0
+    primary: 10.0
+    validation: 2.0
+    followup: 3.0
+  phase_call_limits:
+    pilot: 300
+    primary: 7000
+    validation: 1000
+    followup: 1500

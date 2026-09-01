@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-08-31T12:56:36.901351+00:00",
+  "expected_cost_usd": 0.875619,
+  "expected_tokens_per_request": {
+    "input": 2571,
+    "output_including_reasoning": 396
+  },
+  "model": "gpt-5.4-mini-2026-03-17",
+  "note": "Token sizing uses billed calls only from completed runs in the named current-protocol pilot phase. A false proceed value blocks the phase.",
+  "phase": "validation",
+  "phase_hard_limit_usd": 2.0,
+  "pilot_artifact_phase": "pilot_corrected_v4",
+  "pilot_billed_calls": 186,
+  "pilot_invalid_responses": 6,
+  "pilot_observed_input_tokens": {
+    "maximum": 2917,
+    "mean": 2571,
+    "p95": 2913
+  },
+  "pilot_observed_output_tokens": {
+    "maximum": 405,
+    "mean": 396,
+    "p95": 402
+  },
+  "pilot_successful_calls": 180,
+  "planned_request_ceiling": 236,
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "price_verified_utc_date": "2026-08-31",
+  "prices_per_million_usd": {
+    "cached_input": 0.075,
+    "input": 0.75,
+    "output": 4.5
+  },
+  "proceed": true,
+  "worst_case_cost_usd": 1.1505,
+  "worst_case_tokens_per_request": {
+    "input": 3500,
+    "output_including_reasoning": 500
+  }
+}

@@ -1,0 +1,5 @@
+metric,n_pairs,difference_definition,mean_paired_difference,ci95_low,ci95_high,rank_biserial,wilcoxon_p
+mean_time_loss_s,20,positive_favors_local_placement,0.6248067628205162,0.2584318155662635,0.9915417687935576,0.7047619047619048,0.0042209625244140625
+p95_time_loss_s,20,positive_favors_local_placement,1.0619999999999998,-0.6085125000000008,2.8350499999999985,0.24761904761904763,0.34881019592285156
+p95_trip_time_s,20,positive_favors_local_placement,1.25,-0.15,2.65,0.43859649122807015,0.10089192133671401
+completed_trips,20,positive_favors_local_placement,0.5,-0.05,1.05,0.4725274725274725,0.12388708447453564

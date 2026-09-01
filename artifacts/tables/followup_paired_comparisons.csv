@@ -1,0 +1,69 @@
+scenario,metric,metric_label,direction,comparator,n_pairs,governed_mean,comparator_mean,mean_paired_benefit,percent_benefit_vs_comparator,ci95_bca_low,ci95_bca_high,rank_biserial,wilcoxon_p_raw,wilcoxon_p_holm,holm_reject_0_05
+F1_C3,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,agentic_governed_no_peer,10,29.39683819245235,29.613843017792465,0.21700482534011378,0.7327817102621023,-0.6985557894391772,1.0964428898401477,0.23636363636363636,0.556640625,1.0,False
+F1_C3,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,local_maxwave,10,29.39683819245235,29.613843017792465,0.21700482534011378,0.7327817102621023,-0.7304647273428028,1.0786791854582214,0.23636363636363636,0.556640625,1.0,False
+F1_C3,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,coordinated_maxpressure,10,29.39683819245235,24.732002719116714,-4.664835473335638,-18.86153550246027,-5.482012822828382,-3.5759568990397286,-1.0,0.001953125,0.01171875,True
+F1_C3,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,agentic_governed_no_peer,10,105.825,105.87,0.04499999999999886,0.04250495891187197,-3.5107823959011144,3.5594188317156004,0.01818181818181818,1.0,1.0,False
+F1_C3,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,local_maxwave,10,105.825,105.87,0.04499999999999886,0.04250495891187197,-3.5870000000000024,3.521000000000002,0.01818181818181818,1.0,1.0,False
+F1_C3,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,coordinated_maxpressure,10,105.825,82.043,-23.782,-28.987238399375936,-26.000616802256104,-19.590005018068478,-1.0,0.001953125,0.01171875,True
+F1_C3,maximum_approach_wait_s,Maximum approach wait (s),lower,agentic_governed_no_peer,10,40.8,42.5,1.7,4.0,-4.1,7.2,0.23636363636363636,0.541015625,1.0,False
+F1_C3,maximum_approach_wait_s,Maximum approach wait (s),lower,local_maxwave,10,40.8,42.5,1.7,4.0,-4.2,7.2,0.23636363636363636,0.541015625,1.0,False
+F1_C3,maximum_approach_wait_s,Maximum approach wait (s),lower,coordinated_maxpressure,10,40.8,84.8,44.0,51.886792452830186,35.2,52.6,1.0,0.001953125,0.01171875,True
+F1_C3,max_spillback_duration_s,Maximum spillback duration (s),lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,max_spillback_duration_s,Maximum spillback duration (s),lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,max_spillback_duration_s,Maximum spillback duration (s),lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,post_5min_completed_trips,Post-warm-up completed trips,higher,agentic_governed_no_peer,10,2509.9,2510.7,-0.8,-0.03186362369060421,-5.6,4.3,-0.06666666666666667,0.89453125,1.0,False
+F1_C3,post_5min_completed_trips,Post-warm-up completed trips,higher,local_maxwave,10,2509.9,2510.7,-0.8,-0.03186362369060421,-5.9,4.3,-0.06666666666666667,0.89453125,1.0,False
+F1_C3,post_5min_completed_trips,Post-warm-up completed trips,higher,coordinated_maxpressure,10,2509.9,2508.8,1.1,0.043845663265306124,-3.8,5.3,0.24444444444444444,0.546875,1.0,False
+F1_C3,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,agentic_governed_no_peer,10,0.3943990842081823,0.38067708645512977,0.013721997753052533,3.604629288521661,0.007754394802783006,0.020253099387190835,1.0,0.001953125,0.01171875,True
+F1_C3,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,local_maxwave,10,0.3943990842081823,0.38067708645512977,0.013721997753052533,3.604629288521661,0.007848037083787937,0.01999717279059374,1.0,0.001953125,0.01171875,True
+F1_C3,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,coordinated_maxpressure,10,0.3943990842081823,0.42544847122597257,-0.03104938701779019,-7.298037040377242,-0.043172042931001874,-0.022116657400216136,-1.0,0.001953125,0.01171875,True
+F1_C3,collisions,SUMO collisions,lower,agentic_governed_no_peer,10,0.0,0.1,0.1,100.0,0.0,0.4,1.0,1.0,1.0,False
+F1_C3,collisions,SUMO collisions,lower,local_maxwave,10,0.0,0.1,0.1,100.0,0.0,0.4,1.0,1.0,1.0,False
+F1_C3,collisions,SUMO collisions,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,teleports,SUMO teleports,lower,agentic_governed_no_peer,10,0.0,0.1,0.1,100.0,0.0,0.5,1.0,1.0,1.0,False
+F1_C3,teleports,SUMO teleports,lower,local_maxwave,10,0.0,0.1,0.1,100.0,0.0,0.4,1.0,1.0,1.0,False
+F1_C3,teleports,SUMO teleports,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,executed_unsafe_actions,Executed unsafe actions,lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,executed_unsafe_actions,Executed unsafe actions,lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,executed_unsafe_actions,Executed unsafe actions,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C3,fallback_rate,Fallback rate,lower,agentic_governed_no_peer,10,0.1774193548387097,0.04731182795698925,-0.13010752688172042,-274.99999999999994,-0.17634408602150536,-0.1053763440860215,-1.0,0.001953125,0.00390625,True
+F1_C3,wan_application_bytes,API application bytes,context,agentic_governed_no_peer,10,212647.8,184211.7,-28436.1,-15.436641646540364,-28552.90765203599,-28117.240916873285,-1.0,0.001953125,,False
+F1_C3,wan_application_bytes,API application bytes,context,local_maxwave,10,212647.8,0.0,-212647.8,,-213371.77278177827,-209842.7,-1.0,0.001953125,,False
+F1_C3,wan_application_bytes,API application bytes,context,coordinated_maxpressure,10,212647.8,0.0,-212647.8,,-213371.4,-210500.13828320452,-1.0,0.001953125,,False
+F1_C3,peer_application_bytes,Peer application bytes,context,agentic_governed_no_peer,10,549230.7,0.0,-549230.7,,-549330.9659244178,-549103.0879440028,-1.0,0.001953125,,False
+F1_C3,peer_application_bytes,Peer application bytes,context,local_maxwave,10,549230.7,0.0,-549230.7,,-549327.378879797,-549107.874670309,-1.0,0.001953125,,False
+F1_C3,peer_application_bytes,Peer application bytes,context,coordinated_maxpressure,10,549230.7,0.0,-549230.7,,-549330.4,-549105.1930591624,-1.0,0.001953125,,False
+F1_C8,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,agentic_governed_no_peer,10,80.42403079599971,75.54550757225428,-4.878523223745428,-6.457727772997544,-10.532760350938009,-0.7251413118820946,-0.5636363636363636,0.130859375,0.5234375,False
+F1_C8,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,local_maxwave,10,80.42403079599971,74.5717448451394,-5.852285950860297,-7.847859753065372,-13.134602155042575,-0.6954328259038702,-0.5636363636363636,0.130859375,0.5234375,False
+F1_C8,post_5min_mean_time_loss_s,Post-warm-up mean time loss (s),lower,coordinated_maxpressure,10,80.42403079599971,175.70654655870368,95.28251576270397,54.22821040471023,73.8215485422484,111.65522646023506,1.0,0.001953125,0.01171875,True
+F1_C8,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,agentic_governed_no_peer,10,232.64700000000002,222.55900000000003,-10.088,-4.532730646704917,-30.01317044062433,5.051802095616704,-0.3090909090909091,0.431640625,1.0,False
+F1_C8,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,local_maxwave,10,232.64700000000002,218.942,-13.704999999999998,-6.259648674078065,-34.29194881939566,1.8160372753902287,-0.16363636363636364,0.6953125,1.0,False
+F1_C8,post_5min_p95_time_loss_s,Post-warm-up P95 time loss (s),lower,coordinated_maxpressure,10,232.64700000000002,668.985,436.338,65.22388394358617,296.91791540917507,525.5739135746535,1.0,0.001953125,0.01171875,True
+F1_C8,maximum_approach_wait_s,Maximum approach wait (s),lower,agentic_governed_no_peer,10,808.5,915.7,107.2,11.706890903134214,-66.65862153624747,352.71190744206905,0.4888888888888889,0.21875,1.0,False
+F1_C8,maximum_approach_wait_s,Maximum approach wait (s),lower,local_maxwave,10,808.5,917.4,108.9,11.870503597122303,-71.1,330.21676921975796,0.5111111111111111,0.203125,1.0,False
+F1_C8,maximum_approach_wait_s,Maximum approach wait (s),lower,coordinated_maxpressure,10,808.5,729.4,-79.1,-10.844529750479847,-355.7171421568802,119.56248853451396,-0.09090909090909091,0.845703125,1.0,False
+F1_C8,max_spillback_duration_s,Maximum spillback duration (s),lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,max_spillback_duration_s,Maximum spillback duration (s),lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,max_spillback_duration_s,Maximum spillback duration (s),lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,post_5min_completed_trips,Post-warm-up completed trips,higher,agentic_governed_no_peer,10,2386.6,2370.2,16.4,0.691924732090119,-4.2,89.7,-0.01818181818181818,0.98046875,1.0,False
+F1_C8,post_5min_completed_trips,Post-warm-up completed trips,higher,local_maxwave,10,2386.6,2371.1,15.5,0.653705031420016,-5.5,77.2092313903302,-0.13333333333333333,0.76171875,1.0,False
+F1_C8,post_5min_completed_trips,Post-warm-up completed trips,higher,coordinated_maxpressure,10,2386.6,2307.3,79.3,3.4369176093269185,8.6,134.2,0.7090909090909091,0.048828125,0.29296875,False
+F1_C8,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,agentic_governed_no_peer,10,0.1719705830708019,0.1592057425690912,0.012764840501710695,8.017826678689735,-0.0477777814172347,0.06402120997813397,0.4909090909090909,0.193359375,0.38671875,False
+F1_C8,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,local_maxwave,10,0.1719705830708019,0.15559759811233848,0.016372984958463444,10.522646337151338,-0.04287908381401666,0.06329042842628846,0.45454545454545453,0.232421875,0.38671875,False
+F1_C8,approach_wait_fairness_jain,Approach-wait Jain fairness,higher,coordinated_maxpressure,10,0.1719705830708019,0.24767137891893182,-0.07570079584812989,-30.565015698850047,-0.09859837495463575,-0.017682352581807358,-0.8909090909090909,0.009765625,0.029296875,True
+F1_C8,collisions,SUMO collisions,lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,collisions,SUMO collisions,lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,collisions,SUMO collisions,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,teleports,SUMO teleports,lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,teleports,SUMO teleports,lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,teleports,SUMO teleports,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,executed_unsafe_actions,Executed unsafe actions,lower,agentic_governed_no_peer,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,executed_unsafe_actions,Executed unsafe actions,lower,local_maxwave,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,executed_unsafe_actions,Executed unsafe actions,lower,coordinated_maxpressure,10,0.0,0.0,0.0,,0.0,0.0,0.0,1.0,1.0,False
+F1_C8,fallback_rate,Fallback rate,lower,agentic_governed_no_peer,10,0.2568548387096774,0.06653225806451613,-0.1903225806451613,-286.06060606060606,-0.22943548387096768,-0.1370967741935484,-1.0,0.001953125,0.00390625,True
+F1_C8,wan_application_bytes,API application bytes,context,agentic_governed_no_peer,10,408645.3,313557.5,-95087.8,-30.325474593973993,-95217.62853069471,-94952.76677011595,-1.0,0.001953125,,False
+F1_C8,wan_application_bytes,API application bytes,context,local_maxwave,10,408645.3,0.0,-408645.3,,-408758.7,-408548.3314071642,-1.0,0.001953125,,False
+F1_C8,wan_application_bytes,API application bytes,context,coordinated_maxpressure,10,408645.3,0.0,-408645.3,,-408760.77219833556,-408550.69999999995,-1.0,0.001953125,,False
+F1_C8,peer_application_bytes,Peer application bytes,context,agentic_governed_no_peer,10,1860625.3,0.0,-1860625.3,,-1861172.3530500382,-1860096.887433104,-1.0,0.001953125,,False
+F1_C8,peer_application_bytes,Peer application bytes,context,local_maxwave,10,1860625.3,0.0,-1860625.3,,-1861169.947290164,-1860083.147902581,-1.0,0.001953125,,False
+F1_C8,peer_application_bytes,Peer application bytes,context,coordinated_maxpressure,10,1860625.3,0.0,-1860625.3,,-1861181.9092835619,-1860085.1119230525,-1.0,0.001953125,,False

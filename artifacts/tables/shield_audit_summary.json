@@ -1,0 +1,9 @@
+{
+  "false_block_interpretation": "not independently estimable because rule labels define unsafe",
+  "proposals": 200,
+  "proposed_unsafe": 29,
+  "selection": "round-robin across declared scenario/request/boundary strata, SHA-256 order",
+  "shield_off_executed_unsafe": 29,
+  "shield_on_blocked_unsafe": 29,
+  "shield_on_executed_unsafe": 0
+}

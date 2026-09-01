@@ -1,0 +1,116 @@
+services:
+  experiment:
+    profiles: ["experiment"]
+    build:
+      context: .
+      dockerfile: Dockerfile.release
+    image: agentic-edge-traffic-poc:1.0.0
+    working_dir: /workspace
+    environment:
+      PYTHONPATH: /workspace/src
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+    volumes:
+      - .:/workspace
+
+  tls-init:
+    build: .
+    command: ["python3", "scripts/generate_mqtt_tls.py", "--output", "/tls"]
+    volumes:
+      - ./artifacts/network_tls:/tls
+
+  broker:
+    image: eclipse-mosquitto:2.0.22@sha256:212f89e1eaeb2c322d6441b64396e3346026674db8fa9c27beac293405c32b3c
+    depends_on:
+      tls-init:
+        condition: service_completed_successfully
+    volumes:
+      - ./network/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./artifacts/network_tls:/mosquitto/certs
+    healthcheck:
+      test: ["CMD-SHELL", "mosquitto_pub --cafile /mosquitto/certs/ca.crt -h broker -p 8883 -t health -m ok || exit 1"]
+      interval: 2s
+      timeout: 2s
+      retries: 15
+
+  pcap:
+    image: ghcr.io/nicolaka/netshoot:v0.16@sha256:147f2c4cb0aa7a741151bce2bfef71d9e1a04631636e24665ee2a5ed799feb47
+    network_mode: service:broker
+    depends_on:
+      broker:
+        condition: service_healthy
+    command: ["tcpdump", "-i", "any", "-s", "0", "-U", "-w", "/pcap/network_harness.pcap", "tcp", "port", "8883"]
+    cap_add: [NET_ADMIN, NET_RAW]
+    volumes:
+      - ./artifacts/pcap:/pcap
+
+  edge-agent:
+    build: .
+    depends_on:
+      broker:
+        condition: service_healthy
+    cap_add: [NET_ADMIN]
+    command:
+      - /bin/sh
+      - -c
+      - >-
+        tc qdisc replace dev eth0 root netem delay ${EDGE_DELAY_MS:-5}ms ${EDGE_JITTER_MS:-1}ms
+        loss ${EDGE_LOSS_PERCENT:-0.05}% rate ${EDGE_RATE_MBIT:-100}mbit &&
+        python3 scripts/network_harness.py edge --architecture ${ARCHITECTURE:-edge}
+    environment:
+      MQTT_BROKER: broker
+      MQTT_CA: /tls/ca.crt
+      HARNESS_OUTPUT: /artifacts/network
+    volumes:
+      - ./artifacts/network_tls:/tls:ro
+      - ./artifacts:/artifacts
+
+  cloud-controller:
+    build: .
+    depends_on:
+      broker:
+        condition: service_healthy
+    cap_add: [NET_ADMIN]
+    command:
+      - /bin/sh
+      - -c
+      - >-
+        tc qdisc replace dev eth0 root netem delay ${CLOUD_DELAY_MS:-40}ms ${CLOUD_JITTER_MS:-10}ms
+        loss ${CLOUD_LOSS_PERCENT:-0.25}% rate ${CLOUD_RATE_MBIT:-20}mbit &&
+        python3 scripts/network_harness.py cloud --architecture ${ARCHITECTURE:-edge}
+    environment:
+      MQTT_BROKER: broker
+      MQTT_CA: /tls/ca.crt
+      HARNESS_OUTPUT: /artifacts/network
+    volumes:
+      - ./artifacts/network_tls:/tls:ro
+      - ./artifacts:/artifacts
+
+  simulator-controller:
+    build: .
+    depends_on:
+      broker:
+        condition: service_healthy
+      pcap:
+        condition: service_started
+      edge-agent:
+        condition: service_started
+      cloud-controller:
+        condition: service_started
+    cap_add: [NET_ADMIN]
+    command:
+      - /bin/sh
+      - -c
+      - >-
+        if [ "${ARCHITECTURE:-edge}" = "cloud" ]; then
+          tc qdisc replace dev eth0 root netem delay ${CLOUD_DELAY_MS:-40}ms ${CLOUD_JITTER_MS:-10}ms loss ${CLOUD_LOSS_PERCENT:-0.25}% rate ${CLOUD_RATE_MBIT:-20}mbit;
+        else
+          tc qdisc replace dev eth0 root netem delay ${EDGE_DELAY_MS:-5}ms ${EDGE_JITTER_MS:-1}ms loss ${EDGE_LOSS_PERCENT:-0.05}% rate ${EDGE_RATE_MBIT:-100}mbit;
+        fi &&
+        python3 scripts/network_harness.py simulator --architecture ${ARCHITECTURE:-edge} --messages 100
+    environment:
+      MQTT_BROKER: broker
+      MQTT_CA: /tls/ca.crt
+      HARNESS_OUTPUT: /artifacts/network
+    volumes:
+      - ./artifacts/network_tls:/tls:ro
+      - ./artifacts:/artifacts

@@ -1,0 +1,294 @@
+scenario,metric,metric_label,governed,comparator,n_pairs,difference_definition,mean_paired_difference,median_paired_difference,ci95_low,ci95_high,rank_biserial,wilcoxon_p_raw,wilcoxon_p_holm,holm_reject_0_05
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.3150832308894806,0.3625033818058334,-0.9376351904859472,1.484534736854531,0.18095238095238095,0.49800872802734375,1.0,False
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,-0.7391251390774386,-0.995705476289352,-2.3573183726116764,0.9506020086542593,-0.2571428571428571,0.3299827575683594,1.0,False
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,21.69142703717294,21.425233086055663,19.987705424493157,23.36240753360402,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,25.0424364943294,25.78934396513602,21.56829912175783,28.654828297126677,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,fixed,20,positive_favors_governed,7.067020107475718,6.955313224075294,5.9207781260755015,8.211707421965315,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,mean_time_loss_s,Mean time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,0.12930490939814235,-0.013228157356628856,-1.1846536970076904,1.337267344584147,0.13333333333333333,0.6215133666992188,1.0,False
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-1.8170000000000024,3.5450000000000017,-12.404500000000002,8.511612499999993,-0.06666666666666667,0.8123550415039062,1.0,False
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,-5.979500000000004,-5.285000000000011,-16.393237500000005,3.7701124999999958,-0.21904761904761905,0.40909767150878906,1.0,False
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,76.92150000000001,77.89500000000001,64.94313749999999,88.27674999999998,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,96.63700000000001,93.64,72.96758750000001,119.70707499999999,0.9809523809523809,5.7220458984375e-06,0.000125885009765625,True
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,fixed,20,positive_favors_governed,-0.5600000000000029,-1.990000000000009,-8.5888,7.2495249999999976,-0.05714285714285714,0.8408222198486328,1.0,False
+S0,p95_time_loss_s,P95 time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,-3.1715000000000004,-1.6499999999999915,-12.571524999999998,5.7176124999999995,-0.14285714285714285,0.5958194732666016,1.0,False
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,3.3,4.0,-1.35,7.85,0.34285714285714286,0.17865311964913733,1.0,False
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,0.45,-1.0,-5.651249999999999,6.75,0.010526315789473684,0.9678870518066629,1.0,False
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,73.2,75.0,66.6,79.85124999999998,1.0,8.819870204194453e-05,0.002374617423703541,True
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,87.1,80.0,71.35,104.5,1.0,8.832385863081277e-05,0.002374617423703541,True
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,fixed,20,positive_favors_governed,23.35,24.0,18.75,28.0,0.9904761904761905,0.00010248649056818514,0.002374617423703541,True
+S0,p95_trip_time_s,P95 trip time (s),agentic_governed,local_maxwave,20,positive_favors_governed,2.7,2.0,-2.15,7.6,0.2631578947368421,0.31399717552631656,1.0,False
+S0,completed_trips,Completed trips,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-0.65,-0.5,-2.1,0.7,-0.25,0.3754360615572929,1.0,False
+S0,completed_trips,Completed trips,agentic_governed,agentic_unguarded,20,positive_favors_governed,0.4,0.5,-1.25,2.0,0.20261437908496732,0.4551689872958835,1.0,False
+S0,completed_trips,Completed trips,agentic_governed,cloud_maxpressure,20,positive_favors_governed,16.9,16.0,14.25,19.55,1.0,8.633748926134029e-05,0.0021720885156601547,True
+S0,completed_trips,Completed trips,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,13.6,14.0,10.7,16.6,1.0,0.00012774301113149903,0.0024271172114984814,True
+S0,completed_trips,Completed trips,agentic_governed,fixed,20,positive_favors_governed,10.45,10.5,9.2,11.55,1.0,8.378218840902654e-05,0.0021720885156601547,True
+S0,completed_trips,Completed trips,agentic_governed,local_maxwave,20,positive_favors_governed,-1.15,-0.5,-2.75,0.0,-0.5,0.0741867865037315,0.8160546515410465,False
+S0,max_total_queue,Maximum total queue,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-2.1,-1.5,-9.15,6.25,-0.2904761904761905,0.25393867929430936,1.0,False
+S0,max_total_queue,Maximum total queue,agentic_governed,agentic_unguarded,20,positive_favors_governed,1.2,0.0,-7.2,9.9,0.09803921568627451,0.7224509488777382,1.0,False
+S0,max_total_queue,Maximum total queue,agentic_governed,cloud_maxpressure,20,positive_favors_governed,52.15,48.5,42.6,61.8,1.0,8.832385863081277e-05,0.0021800574482719903,True
+S0,max_total_queue,Maximum total queue,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,66.95,63.0,57.3,76.85,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,max_total_queue,Maximum total queue,agentic_governed,fixed,20,positive_favors_governed,5.2,7.0,0.05,10.151249999999981,0.4666666666666667,0.06725913065927369,1.0,False
+S0,max_total_queue,Maximum total queue,agentic_governed,local_maxwave,20,positive_favors_governed,-4.7,-1.5,-10.15,0.3,-0.37894736842105264,0.1469243403621482,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-91910.05,-91927.5,-92031.1525,-91781.6,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,13.55,26.5,-279.26874999999995,306.10249999999996,0.05714285714285714,0.8408222198486328,1.0,False
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,8382674.6,8382666.0,8382272.85,8383071.8025,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-394830.45,-394824.5,-394943.4,-394712.445,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-394830.45,-394824.5,-394942.2025,-394713.94875000004,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,wan_application_bytes,WAN application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-394830.45,-394824.5,-394943.805,-394715.54875,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-1858476.15,-1858489.5,-1858830.85,-1858129.2950000002,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,-6.5,-97.0,-613.10625,583.5299999999995,0.009523809523809525,0.9854354858398438,1.0,False
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-1858476.15,-1858489.5,-1858828.10125,-1858127.69625,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-1858476.15,-1858489.5,-1858840.40625,-1858134.5962500002,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-1858476.15,-1858489.5,-1858826.70125,-1858138.85,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,peer_application_bytes,Peer application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-1858476.15,-1858489.5,-1858827.9549999998,-1858127.5950000002,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-10.25,-10.0,-11.85,-8.7,-1.0,8.572377593819394e-05,0.00230135041870983,True
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,3.3,3.0,0.65,6.05,0.5105263157894737,0.05028871480124877,0.09765625,False
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-14.65,-15.5,-16.15,-13.05,-1.0,8.670731863656777e-05,0.00230135041870983,True
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-14.65,-15.5,-16.15,-13.0,-1.0,8.670731863656777e-05,0.00230135041870983,True
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,fixed,20,positive_favors_governed,-14.65,-15.5,-16.2,-13.05,-1.0,8.670731863656777e-05,0.00230135041870983,True
+S0,proposed_unsafe_actions,Proposed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,-14.65,-15.5,-16.15,-13.0,-1.0,8.670731863656777e-05,0.00230135041870983,True
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,17.95,18.0,15.9,20.15,1.0,8.720229793087962e-05,0.0023444332887706297,True
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,executed_unsafe_actions,Executed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S0,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_unguarded,20,positive_favors_governed,77.83376664842181,75.0,68.58373671547164,87.56531939883233,1.0,8.819870204194453e-05,0.0006173909142936117,True
+S1,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,0.42098447490999436,-0.06725886341397569,-2.104872873459154,3.2228269502195914,0.05454545454545454,0.921875,1.0,False
+S1,mean_time_loss_s,Mean time loss (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,21.774983999064325,21.2723337079326,17.27188949632453,26.658386386891955,1.0,0.001953125,0.03515625,True
+S1,mean_time_loss_s,Mean time loss (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,36.911643734073756,30.82501420788528,25.766368181665957,48.92121731194937,1.0,0.001953125,0.03515625,True
+S1,mean_time_loss_s,Mean time loss (s),agentic_governed,fixed,10,positive_favors_governed,7.326569828692428,6.9286457063493785,5.25842918438772,9.483385974479985,1.0,0.001953125,0.03515625,True
+S1,mean_time_loss_s,Mean time loss (s),agentic_governed,local_maxwave,10,positive_favors_governed,-2.987043056552131,-3.150640505917991,-4.871839831526659,-1.0994070723014455,-0.7090909090909091,0.048828125,0.537109375,False
+S1,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,-4.667000000000002,-5.054999999999993,-17.916449999999998,8.414224999999995,-0.2727272727272727,0.4921875,1.0,False
+S1,p95_time_loss_s,P95 time loss (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,69.23599999999999,60.120000000000005,51.434000000000005,89.23999999999998,1.0,0.001953125,0.037109375,True
+S1,p95_time_loss_s,P95 time loss (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,128.74200000000002,99.045,76.99669999999999,183.525575,1.0,0.001953125,0.037109375,True
+S1,p95_time_loss_s,P95 time loss (s),agentic_governed,fixed,10,positive_favors_governed,14.551999999999996,11.944999999999993,-1.095700000000004,31.299124999999986,0.5272727272727272,0.16015625,1.0,False
+S1,p95_time_loss_s,P95 time loss (s),agentic_governed,local_maxwave,10,positive_favors_governed,-21.493000000000002,-19.630000000000024,-33.65605000000001,-9.028974999999994,-0.8545454545454545,0.013671875,0.19140625,False
+S1,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,-4.3,-5.0,-14.7,6.1,-0.2727272727272727,0.4921875,1.0,False
+S1,p95_trip_time_s,P95 trip time (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,70.0,65.5,50.5,91.7,1.0,0.001953125,0.037109375,True
+S1,p95_trip_time_s,P95 trip time (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,143.1,114.0,90.8,203.1,1.0,0.001953125,0.037109375,True
+S1,p95_trip_time_s,P95 trip time (s),agentic_governed,fixed,10,positive_favors_governed,17.9,16.0,8.8,27.6,0.8909090909090909,0.009765625,0.13671875,False
+S1,p95_trip_time_s,P95 trip time (s),agentic_governed,local_maxwave,10,positive_favors_governed,-11.3,-13.5,-20.2,-2.0,-0.6909090909090909,0.052734375,0.6328125,False
+S1,completed_trips,Completed trips,agentic_governed,agentic_unguarded,10,positive_favors_governed,4.2,3.5,0.3,8.2,0.5818181818181818,0.11328125,1.0,False
+S1,completed_trips,Completed trips,agentic_governed,cloud_maxpressure,10,positive_favors_governed,27.8,28.5,21.6,33.7,1.0,0.001953125,0.03515625,True
+S1,completed_trips,Completed trips,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,24.9,20.0,18.6,31.9,1.0,0.001953125,0.03515625,True
+S1,completed_trips,Completed trips,agentic_governed,fixed,10,positive_favors_governed,17.4,15.0,14.0,21.1,1.0,0.001953125,0.03515625,True
+S1,completed_trips,Completed trips,agentic_governed,local_maxwave,10,positive_favors_governed,-0.7,-0.5,-3.6,2.0,-0.2,0.66015625,1.0,False
+S1,max_total_queue,Maximum total queue,agentic_governed,agentic_unguarded,10,positive_favors_governed,5.7,8.5,-5.5,16.2,0.38181818181818183,0.322265625,1.0,False
+S1,max_total_queue,Maximum total queue,agentic_governed,cloud_maxpressure,10,positive_favors_governed,58.1,59.0,46.2,68.6,1.0,0.001953125,0.041015625,True
+S1,max_total_queue,Maximum total queue,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,77.5,70.0,61.2,95.3,1.0,0.001953125,0.041015625,True
+S1,max_total_queue,Maximum total queue,agentic_governed,fixed,10,positive_favors_governed,7.2,6.0,0.4,14.2,0.5636363636363636,0.125,1.0,False
+S1,max_total_queue,Maximum total queue,agentic_governed,local_maxwave,10,positive_favors_governed,-4.5,-9.0,-11.3,3.1,-0.38181818181818183,0.30078125,1.0,False
+S1,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,fixed,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,local_maxwave,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_unguarded,10,positive_favors_governed,173.4,314.5,-28.902499999999996,366.01749999999976,0.5636363636363636,0.130859375,0.5234375,False
+S1,wan_application_bytes,WAN application bytes/h,agentic_governed,cloud_maxpressure,10,positive_favors_governed,8387669.3,8386390.5,8385928.655,8390442.0,1.0,0.001953125,0.025390625,True
+S1,wan_application_bytes,WAN application bytes/h,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-393745.6,-394981.0,-395147.3,-391099.285,-1.0,0.001953125,0.025390625,True
+S1,wan_application_bytes,WAN application bytes/h,agentic_governed,fixed,10,positive_favors_governed,-393745.6,-394981.0,-395154.2025,-391091.485,-1.0,0.001953125,0.025390625,True
+S1,wan_application_bytes,WAN application bytes/h,agentic_governed,local_maxwave,10,positive_favors_governed,-393745.6,-394981.0,-395152.5025,-391098.095,-1.0,0.001953125,0.025390625,True
+S1,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_unguarded,10,positive_favors_governed,27.2,303.0,-574.67,559.7249999999997,0.16363636363636364,0.6953125,1.0,False
+S1,peer_application_bytes,Peer application bytes/h,agentic_governed,cloud_maxpressure,10,positive_favors_governed,-1860151.4,-1860266.0,-1860668.2049999998,-1859599.9975,-1.0,0.001953125,0.025390625,True
+S1,peer_application_bytes,Peer application bytes/h,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-1860151.4,-1860266.0,-1860678.2075,-1859605.58,-1.0,0.001953125,0.025390625,True
+S1,peer_application_bytes,Peer application bytes/h,agentic_governed,fixed,10,positive_favors_governed,-1860151.4,-1860266.0,-1860678.31,-1859613.4975,-1.0,0.001953125,0.025390625,True
+S1,peer_application_bytes,Peer application bytes/h,agentic_governed,local_maxwave,10,positive_favors_governed,-1860151.4,-1860266.0,-1860675.4349999998,-1859607.1875,-1.0,0.001953125,0.025390625,True
+S1,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_unguarded,10,positive_favors_governed,4.7,3.5,1.2,8.8,0.7090909090909091,0.048828125,0.09765625,False
+S1,proposed_unsafe_actions,Proposed policy violations,agentic_governed,cloud_maxpressure,10,positive_favors_governed,-15.6,-16.0,-18.0,-13.1,-1.0,0.001953125,0.021484375,True
+S1,proposed_unsafe_actions,Proposed policy violations,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-15.6,-16.0,-18.0,-13.1,-1.0,0.001953125,0.021484375,True
+S1,proposed_unsafe_actions,Proposed policy violations,agentic_governed,fixed,10,positive_favors_governed,-15.6,-16.0,-18.0,-13.1,-1.0,0.001953125,0.021484375,True
+S1,proposed_unsafe_actions,Proposed policy violations,agentic_governed,local_maxwave,10,positive_favors_governed,-15.6,-16.0,-18.0,-13.1,-1.0,0.001953125,0.021484375,True
+S1,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_unguarded,10,positive_favors_governed,20.3,21.5,16.5,24.0,1.0,0.001953125,0.046875,True
+S1,executed_unsafe_actions,Executed policy violations,agentic_governed,cloud_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,executed_unsafe_actions,Executed policy violations,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,executed_unsafe_actions,Executed policy violations,agentic_governed,fixed,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,executed_unsafe_actions,Executed policy violations,agentic_governed,local_maxwave,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S1,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_unguarded,10,positive_favors_governed,86.99712643678161,91.02011494252874,70.28804905582922,103.34772680623972,1.0,0.001953125,0.0078125,True
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0633008804018104,0.8943487255875553,-1.6315386280432174,1.765295970405619,0.009523809523809525,0.9854354858398438,1.0,False
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,1.4812981353171046,1.581832228564437,-1.4070667635569556,4.322319235428471,0.3142857142857143,0.2305126190185547,1.0,False
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,30.111167394968056,28.990793366909706,26.359784388331484,33.970675052582315,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,37.80801471496213,34.099862127285945,32.12079411506407,44.36844980225736,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,fixed,20,positive_favors_governed,4.983229922210887,6.126815433654979,3.601632870737462,6.292271287123481,0.9523809523809523,1.9073486328125e-05,0.000362396240234375,True
+S2,mean_time_loss_s,Mean time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,1.4342359539091933,1.8263181126711743,-0.7092183675127828,3.506746054868934,0.3523809523809524,0.17685317993164062,1.0,False
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,7.838500000000002,9.980000000000004,-0.5740875000000007,16.019374999999997,0.4095238095238095,0.11398696899414062,1.0,False
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,-3.6350000000000025,-2.989999999999995,-16.3088375,8.82621249999999,-0.14285714285714285,0.5958194732666016,1.0,False
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,102.283,98.7,82.087925,125.38885000000005,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,140.51899999999998,110.55000000000001,107.70641249999997,175.86293750000002,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,fixed,20,positive_favors_governed,-25.500499999999995,-27.89999999999999,-32.94187499999999,-17.907837500000007,-0.9333333333333333,3.62396240234375e-05,0.00072479248046875,True
+S2,p95_time_loss_s,P95 time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,12.6465,16.12999999999998,1.6954374999999986,23.2456625,0.5333333333333333,0.03623390197753906,0.4710407257080078,False
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,5.45,6.0,-1.3,13.0,0.3047619047619048,0.23210354142467327,1.0,False
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,5.9,5.5,-4.15,16.0,0.29523809523809524,0.24681503143772787,1.0,False
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,121.4,103.5,99.2,148.15,1.0,8.832385863081277e-05,0.002374617423703541,True
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,164.05,137.5,130.2,201.25249999999997,1.0,8.832385863081277e-05,0.002374617423703541,True
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,fixed,20,positive_favors_governed,10.85,12.0,4.7,16.35,0.7714285714285715,0.002473342625160739,0.042046824627732564,True
+S2,p95_trip_time_s,P95 trip time (s),agentic_governed,local_maxwave,20,positive_favors_governed,8.7,9.0,-0.85,18.2,0.4421052631578947,0.09092968495079874,0.923828125,False
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-21.8,-2.5,-63.45125,9.05,-0.06842105263157895,0.7935476070071992,1.0,False
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,-20.55,1.5,-77.10125,25.302499999999963,0.09803921568627451,0.7224136449446921,1.0,False
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,24.25,33.0,-21.75125,65.15124999999999,0.5238095238095238,0.039989471435546875,0.4296875,False
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,38.55,27.5,22.8,61.25,0.9714285714285714,0.00013919636333751571,0.00194874908672522,True
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,fixed,20,positive_favors_governed,-293.6,-294.0,-310.40125,-267.99875000000003,-1.0,8.523520069295667e-05,0.00127852801039435,True
+S2,emergency_trip_time_s,Emergency trip time (s),agentic_governed,local_maxwave,20,positive_favors_governed,10.2,0.0,-8.85,35.2,0.07352941176470588,0.7958203101052793,1.0,False
+S2,completed_trips,Completed trips,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.25,1.0,-1.25,1.45,0.2571428571428571,0.39379812516545176,1.0,False
+S2,completed_trips,Completed trips,agentic_governed,agentic_unguarded,20,positive_favors_governed,1.75,1.0,-0.9012499999999989,4.55,0.3238095238095238,0.20259117358930467,1.0,False
+S2,completed_trips,Completed trips,agentic_governed,cloud_maxpressure,20,positive_favors_governed,21.25,20.0,18.1,24.6,1.0,8.769942375590214e-05,0.0021720885156601547,True
+S2,completed_trips,Completed trips,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,15.6,16.0,13.05,18.0,1.0,8.757494073814436e-05,0.0021720885156601547,True
+S2,completed_trips,Completed trips,agentic_governed,fixed,20,positive_favors_governed,10.75,11.0,9.1,12.2,1.0,8.354186598692902e-05,0.0021720885156601547,True
+S2,completed_trips,Completed trips,agentic_governed,local_maxwave,20,positive_favors_governed,-0.55,1.0,-2.25,0.95,-0.005847953216374269,0.982468662008914,1.0,False
+S2,max_total_queue,Maximum total queue,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.55,0.5,-5.9,6.6,0.13157894736842105,0.614011036983508,1.0,False
+S2,max_total_queue,Maximum total queue,agentic_governed,agentic_unguarded,20,positive_favors_governed,-0.55,2.0,-8.2,7.0,0.0,1.0,1.0,False
+S2,max_total_queue,Maximum total queue,agentic_governed,cloud_maxpressure,20,positive_favors_governed,32.0,31.5,22.85,42.25,1.0,8.819870204194453e-05,0.0021800574482719903,True
+S2,max_total_queue,Maximum total queue,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,41.45,40.0,26.85,56.40124999999998,0.9238095238095239,4.76837158203125e-05,0.001239776611328125,True
+S2,max_total_queue,Maximum total queue,agentic_governed,fixed,20,positive_favors_governed,1.75,1.0,-3.7,6.65,0.25263157894736843,0.3333048900114015,1.0,False
+S2,max_total_queue,Maximum total queue,agentic_governed,local_maxwave,20,positive_favors_governed,6.25,2.5,-0.85,13.5,0.3523809523809524,0.16674002533898136,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-94898.7,-95006.5,-95128.95125,-94544.295,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,124.6,28.5,-104.55375,421.25249999999994,0.08571428571428572,0.7561664581298828,1.0,False
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,8369317.7,8369457.5,8368739.225,8369899.0075,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-408242.4,-408312.0,-408462.00375,-407926.89625000005,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-408242.4,-408312.0,-408462.25125,-407924.29625,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,wan_application_bytes,WAN application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-408242.4,-408312.0,-408463.50125,-407915.79125,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-1858488.3,-1858555.5,-1858829.75375,-1858149.195,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,-86.45,-249.0,-714.45,500.75374999999997,0.02857142857142857,0.9272785186767578,1.0,False
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-1858488.3,-1858555.5,-1858820.60375,-1858143.59,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-1858488.3,-1858555.5,-1858827.50375,-1858152.64,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-1858488.3,-1858555.5,-1858828.2025,-1858157.19125,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,peer_application_bytes,Peer application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-1858488.3,-1858555.5,-1858830.60375,-1858146.29875,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,-10.45,-11.0,-12.75,-8.15,-1.0,8.70783521016157e-05,0.00230135041870983,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,4.95,4.0,2.5,7.85,0.8047619047619048,0.001584524785770158,0.0190142974292419,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-15.1,-14.0,-16.7,-13.65,-1.0,8.523520069295667e-05,0.00230135041870983,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-15.1,-14.0,-16.7,-13.65,-1.0,8.523520069295667e-05,0.00230135041870983,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,fixed,20,positive_favors_governed,-15.1,-14.0,-16.7,-13.6,-1.0,8.523520069295667e-05,0.00230135041870983,True
+S2,proposed_unsafe_actions,Proposed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,-15.1,-14.0,-16.7,-13.64875000000002,-1.0,8.523520069295667e-05,0.00230135041870983,True
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,20.05,20.0,17.6,22.65,1.0,8.745059215649785e-05,0.0023444332887706297,True
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,executed_unsafe_actions,Executed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_governed_no_peer,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S2,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_unguarded,20,positive_favors_governed,83.04112704592406,84.6774193548387,73.119240045156,93.65677182650035,1.0,8.832385863081277e-05,0.0006173909142936117,True
+S3,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,2.2593680607582614,2.712172659009628,0.5849762156507408,3.9650089075077086,0.5238095238095238,0.039989471435546875,0.4798736572265625,False
+S3,mean_time_loss_s,Mean time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,28.401353021081206,28.24220663989951,24.682343247692184,32.12107757023976,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,mean_time_loss_s,Mean time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,27.174711103234607,26.52771178516609,23.552447810363564,30.836479193216302,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,mean_time_loss_s,Mean time loss (s),agentic_governed,fixed,20,positive_favors_governed,6.9434303404152375,6.6232535967389055,5.7364821133857715,8.153256092459266,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,mean_time_loss_s,Mean time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,0.16329555539154975,0.07111631282978337,-1.1635830286935531,1.7179388214219449,0.01904761904761905,0.956329345703125,1.0,False
+S3,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,9.448999999999998,8.14,-0.20955000000000254,19.452537500000002,0.41904761904761906,0.10539817810058594,1.0,False
+S3,p95_time_loss_s,P95 time loss (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,87.65099999999998,78.05999999999999,67.2414625,108.431225,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,p95_time_loss_s,P95 time loss (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,86.696,85.785,69.5421875,105.88586249999997,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,p95_time_loss_s,P95 time loss (s),agentic_governed,fixed,20,positive_favors_governed,-18.947,-18.30000000000001,-25.102850000000007,-12.663424999999998,-0.9523809523809523,1.9073486328125e-05,0.000400543212890625,True
+S3,p95_time_loss_s,P95 time loss (s),agentic_governed,local_maxwave,20,positive_favors_governed,2.7375000000000016,0.8300000000000125,-4.394050000000001,10.756987499999989,0.1895424836601307,0.4924592974852695,1.0,False
+S3,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,8.45,5.5,2.15,15.5,0.5285714285714286,0.03815109230740938,0.49596419999632196,False
+S3,p95_trip_time_s,P95 trip time (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,104.85,97.5,88.8,121.5,1.0,8.844915021211901e-05,0.002374617423703541,True
+S3,p95_trip_time_s,P95 trip time (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,98.15,92.5,81.9,116.95124999999999,1.0,8.832385863081277e-05,0.002374617423703541,True
+S3,p95_trip_time_s,P95 trip time (s),agentic_governed,fixed,20,positive_favors_governed,18.45,19.5,14.35,22.55,1.0,8.794879347050151e-05,0.002374617423703541,True
+S3,p95_trip_time_s,P95 trip time (s),agentic_governed,local_maxwave,20,positive_favors_governed,-0.15,-1.0,-4.75,6.45,-0.45588235294117646,0.10817164293700447,0.9735447864330402,False
+S3,emergency_trip_time_s,Emergency trip time (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,-31.55,-2.5,-81.5525,14.75,-0.3660130718954248,0.18495477148896955,1.0,False
+S3,emergency_trip_time_s,Emergency trip time (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,29.15,26.5,-21.35125,77.85124999999998,0.580952380952381,0.022733239907101195,0.27279887888521437,False
+S3,emergency_trip_time_s,Emergency trip time (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-40.9,20.0,-99.80125,10.7,-0.09047619047619047,0.7228208997111943,1.0,False
+S3,emergency_trip_time_s,Emergency trip time (s),agentic_governed,fixed,20,positive_favors_governed,-251.8,-308.0,-294.25125,-204.69875000000002,-1.0,1.9073486328125e-06,3.0517578125e-05,True
+S3,emergency_trip_time_s,Emergency trip time (s),agentic_governed,local_maxwave,20,positive_favors_governed,1.7,0.0,-18.85,28.8,-0.11428571428571428,0.7063581381512472,1.0,False
+S3,completed_trips,Completed trips,agentic_governed,agentic_unguarded,20,positive_favors_governed,1.45,1.0,0.6,2.35,0.7205882352941176,0.010389640206434916,0.124675682477219,False
+S3,completed_trips,Completed trips,agentic_governed,cloud_maxpressure,20,positive_favors_governed,19.25,22.0,16.4,22.05,1.0,8.745059215649785e-05,0.0021720885156601547,True
+S3,completed_trips,Completed trips,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,16.65,16.0,12.95,20.55,1.0,8.769942375590214e-05,0.0021720885156601547,True
+S3,completed_trips,Completed trips,agentic_governed,fixed,20,positive_favors_governed,11.3,11.5,10.6,11.95,1.0,8.023219919057628e-05,0.0021662693781455593,True
+S3,completed_trips,Completed trips,agentic_governed,local_maxwave,20,positive_favors_governed,-0.3,-0.5,-1.1,0.55,-0.24761904761904763,0.4079032329382002,1.0,False
+S3,max_total_queue,Maximum total queue,agentic_governed,agentic_unguarded,20,positive_favors_governed,5.15,5.0,-1.9,12.9,0.29473684210526313,0.25964205610745283,1.0,False
+S3,max_total_queue,Maximum total queue,agentic_governed,cloud_maxpressure,20,positive_favors_governed,26.7,23.0,21.05,32.9,1.0,8.720229793087962e-05,0.0021800574482719903,True
+S3,max_total_queue,Maximum total queue,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,27.75,28.5,20.45,34.95,0.9619047619047619,0.00016221364142479078,0.003568700111345397,True
+S3,max_total_queue,Maximum total queue,agentic_governed,fixed,20,positive_favors_governed,4.95,6.5,0.4,9.25,0.5490196078431373,0.046574130797324725,0.8383343543518451,False
+S3,max_total_queue,Maximum total queue,agentic_governed,local_maxwave,20,positive_favors_governed,3.05,0.0,-1.5,7.95,0.3088235294117647,0.2763230835610814,1.0,False
+S3,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_unguarded,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,2501.05,381.0,-2242.6525,7286.453749999999,0.44761904761904764,0.082550048828125,0.412750244140625,False
+S3,wan_application_bytes,WAN application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,8365239.4,8358433.5,8360900.24,8369986.649999999,1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,wan_application_bytes,WAN application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-412770.0,-420199.5,-416923.075,-408101.77125,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,wan_application_bytes,WAN application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-412770.0,-420199.5,-416935.2525,-408065.475,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,wan_application_bytes,WAN application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-412770.0,-420199.5,-416891.25,-408136.24875,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_unguarded,20,positive_favors_governed,-42.25,192.0,-493.55875,379.60249999999996,-0.009523809523809525,0.9854354858398438,1.0,False
+S3,peer_application_bytes,Peer application bytes/h,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-1855487.05,-1855208.0,-1855907.10125,-1855086.8975,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,peer_application_bytes,Peer application bytes/h,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-1855487.05,-1855208.0,-1855914.1575,-1855085.24625,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,peer_application_bytes,Peer application bytes/h,agentic_governed,fixed,20,positive_favors_governed,-1855487.05,-1855208.0,-1855906.35125,-1855080.8325,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,peer_application_bytes,Peer application bytes/h,agentic_governed,local_maxwave,20,positive_favors_governed,-1855487.05,-1855208.0,-1855896.755,-1855082.99875,-1.0,1.9073486328125e-06,5.14984130859375e-05,True
+S3,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,7.7,7.5,4.9,10.75,0.9263157894736842,0.00039383186316271137,0.005119814221115248,True
+S3,proposed_unsafe_actions,Proposed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,-15.05,-15.0,-16.75,-13.4,-1.0,8.633748926134029e-05,0.00230135041870983,True
+S3,proposed_unsafe_actions,Proposed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,-15.05,-15.0,-16.7,-13.4,-1.0,8.633748926134029e-05,0.00230135041870983,True
+S3,proposed_unsafe_actions,Proposed policy violations,agentic_governed,fixed,20,positive_favors_governed,-15.05,-15.0,-16.7,-13.4,-1.0,8.633748926134029e-05,0.00230135041870983,True
+S3,proposed_unsafe_actions,Proposed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,-15.05,-15.0,-16.75,-13.4,-1.0,8.633748926134029e-05,0.00230135041870983,True
+S3,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_unguarded,20,positive_favors_governed,22.75,21.5,20.5,25.15,1.0,8.683086254706037e-05,0.0023444332887706297,True
+S3,executed_unsafe_actions,Executed policy violations,agentic_governed,cloud_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,executed_unsafe_actions,Executed policy violations,agentic_governed,coordinated_maxpressure,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,executed_unsafe_actions,Executed policy violations,agentic_governed,fixed,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,executed_unsafe_actions,Executed policy violations,agentic_governed,local_maxwave,20,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S3,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_unguarded,20,positive_favors_governed,98.7690212173579,93.75,89.34709129076568,108.54880542062912,1.0,8.832385863081277e-05,0.0006173909142936117,True
+S4,mean_time_loss_s,Mean time loss (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,0.6689735826039985,1.0044812143646737,-2.5583715294560587,3.6838883709571983,0.23636363636363636,0.556640625,1.0,False
+S4,mean_time_loss_s,Mean time loss (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,27.135193357803615,25.39901555882092,22.600100576628876,32.02913227649136,1.0,0.001953125,0.03515625,True
+S4,mean_time_loss_s,Mean time loss (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,21.00570803449056,22.729371084219718,15.038832136876188,25.027491756952912,0.9636363636363636,0.00390625,0.0546875,False
+S4,mean_time_loss_s,Mean time loss (s),agentic_governed,fixed,10,positive_favors_governed,5.896561619533482,6.513157980834002,2.737396475159659,8.476306660942095,0.8545454545454545,0.013671875,0.177734375,False
+S4,mean_time_loss_s,Mean time loss (s),agentic_governed,local_maxwave,10,positive_favors_governed,-0.0634251969105982,-0.555669313315736,-3.7344374512682266,3.509871931133434,-0.09090909090909091,0.845703125,1.0,False
+S4,p95_time_loss_s,P95 time loss (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,1.8569999999999993,-0.5499999999999972,-17.079,19.292374999999993,0.05454545454545454,0.921875,1.0,False
+S4,p95_time_loss_s,P95 time loss (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,91.098,83.505,63.793350000000004,127.0162,1.0,0.001953125,0.037109375,True
+S4,p95_time_loss_s,P95 time loss (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,56.55400000000001,59.11,29.072925,76.81307499999998,0.9272727272727272,0.005859375,0.087890625,False
+S4,p95_time_loss_s,P95 time loss (s),agentic_governed,fixed,10,positive_favors_governed,-22.488999999999997,-20.840000000000003,-36.86635,-10.969974999999994,-0.9636363636363636,0.00390625,0.0625,False
+S4,p95_time_loss_s,P95 time loss (s),agentic_governed,local_maxwave,10,positive_favors_governed,9.409,7.10499999999999,-8.415999999999997,27.263199999999994,0.41818181818181815,0.275390625,1.0,False
+S4,p95_trip_time_s,P95 trip time (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,3.5,5.0,-21.2,25.3,0.3111111111111111,0.4375,1.0,False
+S4,p95_trip_time_s,P95 trip time (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,85.2,80.5,51.097500000000004,124.90249999999997,0.9636363636363636,0.00390625,0.0625,False
+S4,p95_trip_time_s,P95 trip time (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,73.6,89.5,40.9,95.3,0.9636363636363636,0.00390625,0.0625,False
+S4,p95_trip_time_s,P95 trip time (s),agentic_governed,fixed,10,positive_favors_governed,8.8,15.0,-13.902499999999998,24.3,0.6363636363636364,0.083984375,0.923828125,False
+S4,p95_trip_time_s,P95 trip time (s),agentic_governed,local_maxwave,10,positive_favors_governed,0.6,0.5,-25.2,26.9,-0.05454545454545454,0.921875,1.0,False
+S4,emergency_trip_time_s,Emergency trip time (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,8.4,12.0,-84.4025,99.60249999999996,0.16363636363636364,0.677734375,1.0,False
+S4,emergency_trip_time_s,Emergency trip time (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,81.4,59.5,20.4,157.2,0.7777777777777778,0.0390625,0.4296875,False
+S4,emergency_trip_time_s,Emergency trip time (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-3.3,38.0,-56.6,43.90249999999996,0.01818181818181818,1.0,1.0,False
+S4,emergency_trip_time_s,Emergency trip time (s),agentic_governed,fixed,10,positive_favors_governed,-264.9,-305.5,-313.4,-202.79750000000004,-1.0,0.001953125,0.025390625,True
+S4,emergency_trip_time_s,Emergency trip time (s),agentic_governed,local_maxwave,10,positive_favors_governed,-11.6,1.5,-94.8,61.102499999999964,-0.06666666666666667,0.91015625,1.0,False
+S4,completed_trips,Completed trips,agentic_governed,agentic_unguarded,10,positive_favors_governed,1.1,1.5,-0.6,2.9,0.3333333333333333,0.38671875,1.0,False
+S4,completed_trips,Completed trips,agentic_governed,cloud_maxpressure,10,positive_favors_governed,19.7,20.5,16.3,23.0,1.0,0.001953125,0.03515625,True
+S4,completed_trips,Completed trips,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,12.3,10.5,8.9,16.1,1.0,0.001953125,0.03515625,True
+S4,completed_trips,Completed trips,agentic_governed,fixed,10,positive_favors_governed,11.5,11.0,9.9,13.2,1.0,0.001953125,0.03515625,True
+S4,completed_trips,Completed trips,agentic_governed,local_maxwave,10,positive_favors_governed,-0.4,-0.5,-1.3,0.8,-0.42857142857142855,0.4375,1.0,False
+S4,max_total_queue,Maximum total queue,agentic_governed,agentic_unguarded,10,positive_favors_governed,-0.4,7.0,-12.902499999999998,10.6,0.07272727272727272,0.865234375,1.0,False
+S4,max_total_queue,Maximum total queue,agentic_governed,cloud_maxpressure,10,positive_favors_governed,23.6,20.0,8.2,39.3,0.7818181818181819,0.02734375,0.51953125,False
+S4,max_total_queue,Maximum total queue,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,14.2,12.5,-6.0,30.7,0.6,0.1015625,1.0,False
+S4,max_total_queue,Maximum total queue,agentic_governed,fixed,10,positive_favors_governed,5.2,5.0,-6.1,16.2,0.2909090909090909,0.443359375,1.0,False
+S4,max_total_queue,Maximum total queue,agentic_governed,local_maxwave,10,positive_favors_governed,-2.2,-5.0,-17.6,13.402499999999964,-0.16363636363636364,0.673828125,1.0,False
+S4,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,agentic_unguarded,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,cloud_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,coordinated_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,fixed,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,max_spillback_duration_s,Maximum spillback duration (s),agentic_governed,local_maxwave,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,wan_application_bytes,WAN application bytes/h,agentic_governed,agentic_unguarded,10,positive_favors_governed,-3973.7,-140.5,-10623.0725,2484.3075,-0.41818181818181815,0.275390625,0.826171875,False
+S4,wan_application_bytes,WAN application bytes/h,agentic_governed,cloud_maxpressure,10,positive_favors_governed,8338242.6,8337193.0,8332439.75,8344128.0525,1.0,0.001953125,0.025390625,True
+S4,wan_application_bytes,WAN application bytes/h,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-439582.6,-440715.5,-445091.91000000003,-434001.7,-1.0,0.001953125,0.025390625,True
+S4,wan_application_bytes,WAN application bytes/h,agentic_governed,fixed,10,positive_favors_governed,-439582.6,-440715.5,-445085.2175,-434028.27499999997,-1.0,0.001953125,0.025390625,True
+S4,wan_application_bytes,WAN application bytes/h,agentic_governed,local_maxwave,10,positive_favors_governed,-439582.6,-440715.5,-445078.7025,-433986.78500000003,-1.0,0.001953125,0.025390625,True
+S4,peer_application_bytes,Peer application bytes/h,agentic_governed,agentic_unguarded,10,positive_favors_governed,-332.8,-484.5,-881.31,230.93749999999946,-0.34545454545454546,0.375,1.0,False
+S4,peer_application_bytes,Peer application bytes/h,agentic_governed,cloud_maxpressure,10,positive_favors_governed,-1855501.0,-1855223.0,-1855902.7,-1855143.2950000002,-1.0,0.001953125,0.025390625,True
+S4,peer_application_bytes,Peer application bytes/h,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-1855501.0,-1855223.0,-1855918.5025,-1855133.3,-1.0,0.001953125,0.025390625,True
+S4,peer_application_bytes,Peer application bytes/h,agentic_governed,fixed,10,positive_favors_governed,-1855501.0,-1855223.0,-1855910.9,-1855145.4575,-1.0,0.001953125,0.025390625,True
+S4,peer_application_bytes,Peer application bytes/h,agentic_governed,local_maxwave,10,positive_favors_governed,-1855501.0,-1855223.0,-1855908.81,-1855133.5950000002,-1.0,0.001953125,0.025390625,True
+S4,proposed_unsafe_actions,Proposed policy violations,agentic_governed,agentic_unguarded,10,positive_favors_governed,8.3,7.0,5.3,11.6,1.0,0.001953125,0.021484375,True
+S4,proposed_unsafe_actions,Proposed policy violations,agentic_governed,cloud_maxpressure,10,positive_favors_governed,-13.9,-14.0,-15.5,-12.2,-1.0,0.001953125,0.021484375,True
+S4,proposed_unsafe_actions,Proposed policy violations,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,-13.9,-14.0,-15.4,-12.3,-1.0,0.001953125,0.021484375,True
+S4,proposed_unsafe_actions,Proposed policy violations,agentic_governed,fixed,10,positive_favors_governed,-13.9,-14.0,-15.5,-12.3,-1.0,0.001953125,0.021484375,True
+S4,proposed_unsafe_actions,Proposed policy violations,agentic_governed,local_maxwave,10,positive_favors_governed,-13.9,-14.0,-15.5,-12.3,-1.0,0.001953125,0.021484375,True
+S4,executed_unsafe_actions,Executed policy violations,agentic_governed,agentic_unguarded,10,positive_favors_governed,22.2,22.5,19.6,24.7,1.0,0.001953125,0.046875,True
+S4,executed_unsafe_actions,Executed policy violations,agentic_governed,cloud_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,executed_unsafe_actions,Executed policy violations,agentic_governed,coordinated_maxpressure,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,executed_unsafe_actions,Executed policy violations,agentic_governed,fixed,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,executed_unsafe_actions,Executed policy violations,agentic_governed,local_maxwave,10,positive_favors_governed,0.0,0.0,0.0,0.0,0.0,1.0,1.0,False
+S4,unsafe_actions_per_1000_decisions,"Executed violations per 1,000 decisions",agentic_governed,agentic_unguarded,10,positive_favors_governed,91.03770720740967,90.35244922341695,81.70919446159078,100.51114139956995,1.0,0.001953125,0.0078125,True

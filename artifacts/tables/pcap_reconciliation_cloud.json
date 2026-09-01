@@ -1,0 +1,14 @@
+{
+  "accepted_ratio": [
+    1.0,
+    3.0
+  ],
+  "action_messages": 100,
+  "all_application_counters_reconciled": true,
+  "application_endpoint_bytes": 247000,
+  "architecture": "cloud",
+  "pcap_frames_tls_mqtt": 1331,
+  "pcap_to_application_ratio": 2.0677449392712552,
+  "pcap_transport_bytes": 510733,
+  "telemetry_messages": 100
+}

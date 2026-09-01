@@ -1,0 +1,33 @@
+{
+  "api": {
+    "attempts_reaching_api": 1238,
+    "cost_usd": 0.89100506,
+    "status_counts": {
+      "InvalidSupervisorResponseError": 13,
+      "ok": 1225
+    }
+  },
+  "decision": {
+    "all_registered_collision_and_teleport_counts_zero": false,
+    "cologne3_direction_consistent": true,
+    "cologne8_five_percent_and_ci_excludes_zero": false,
+    "coordination_claim_decision_rule_met": false,
+    "verdict_effect": "followup_does_not_upgrade_initial_verdict"
+  },
+  "registered_runs": 80,
+  "runs_by_scenario_controller": {
+    "F1_C3:agentic_governed": 10,
+    "F1_C3:agentic_governed_no_peer": 10,
+    "F1_C3:coordinated_maxpressure": 10,
+    "F1_C3:local_maxwave": 10,
+    "F1_C8:agentic_governed": 10,
+    "F1_C8:agentic_governed_no_peer": 10,
+    "F1_C8:coordinated_maxpressure": 10,
+    "F1_C8:local_maxwave": 10
+  },
+  "safety_totals": {
+    "collisions": 2,
+    "executed_unsafe_actions": 0,
+    "teleports": 2
+  }
+}
