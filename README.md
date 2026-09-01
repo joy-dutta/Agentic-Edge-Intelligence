@@ -124,6 +124,12 @@ On PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`. Use a
 
 This is a controlled SUMO microsimulation, not a field deployment. It is intended to make the architecture, governance controls, failure handling, and evaluation procedure inspectable and repeatable. It does not connect to a physical traffic signal or claim that an LLM alone provides real-time or universal physical safety.
 
+## Associated Publication
+
+This repository supports a manuscript that is currently under peer review. To preserve the confidentiality of the review process, the manuscript title and publication details are not included at this stage. After acceptance, this section will be updated with the complete citation, DOI, and official publication link.
+
+Researchers who use this repository, its experimental methodology, released results, or the associated agentic edge intelligence framework are kindly requested to cite the published article once the final citation becomes available. Until then, the software and released result tables can be cited using the repository's [CITATION.cff](CITATION.cff) file.
+
 ## License and Citation
 
 Repository code is released under the [MIT License](LICENSE). RESCO scenarios retain their upstream license. To cite the software, use [`CITATION.cff`](CITATION.cff).
