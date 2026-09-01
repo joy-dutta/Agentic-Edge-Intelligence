@@ -34,7 +34,7 @@
 - [ ] Run `python scripts/secret_scan.py`.
 - [ ] Run `python scripts/verify_release.py`.
 - [ ] Run `python scripts/verify_docs.py`.
-- [ ] Run `pytest -q`.
+- [ ] Run `python -m pytest -q`.
 - [ ] Run `python scripts/verify_results.py`.
 - [ ] Review `git status --short` and the complete staged diff.
 - [ ] Create a clean root commit so excluded material is absent from Git history.

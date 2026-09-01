@@ -72,7 +72,7 @@ cd Agentic-Edge-Intelligence
 
 docker compose build experiment
 docker compose run --rm experiment python scripts/verify_release.py
-docker compose run --rm experiment pytest -q
+docker compose run --rm experiment python -m pytest -q
 docker compose run --rm experiment python scripts/verify_results.py
 docker compose run --rm experiment python scripts/fetch_resco.py
 docker compose run --rm experiment python scripts/pilot.py --mode offline --phase pilot
@@ -92,7 +92,7 @@ python -m pip install -r requirements.lock
 python -m pip install --no-deps -e .
 
 python scripts/verify_release.py
-pytest -q
+python -m pytest -q
 python scripts/verify_results.py
 python scripts/fetch_resco.py
 python scripts/pilot.py --mode offline --phase pilot

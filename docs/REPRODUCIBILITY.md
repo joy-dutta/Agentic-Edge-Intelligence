@@ -35,7 +35,7 @@ A fresh clone should have an empty status.
 docker compose build experiment
 docker compose run --rm experiment python --version
 docker compose run --rm experiment python scripts/verify_release.py
-docker compose run --rm experiment pytest -q
+docker compose run --rm experiment python -m pytest -q
 docker compose run --rm experiment python scripts/verify_results.py
 ```
 
@@ -78,7 +78,7 @@ Then run:
 
 ```bash
 python scripts/verify_release.py
-pytest -q
+python -m pytest -q
 python scripts/verify_results.py
 ```
 
@@ -243,7 +243,7 @@ The IDQN study is separate from the seven-controller confirmatory matrix.
 ```bash
 python scripts/secret_scan.py
 python scripts/verify_release.py
-pytest -q
+python -m pytest -q
 python scripts/verify_results.py
 git status --short
 ```

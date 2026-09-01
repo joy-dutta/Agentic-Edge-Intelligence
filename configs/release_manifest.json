@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-01T22:35:35.955837+00:00",
+  "created_utc": "2026-09-01T22:39:44.069285+00:00",
   "files": [
     {
       "bytes": 380,
@@ -43,9 +43,9 @@
       "sha256": "f980a9ffa49a8a846508984a1580543f62388308b787a909ceb761bd94152c6a"
     },
     {
-      "bytes": 1404,
+      "bytes": 1414,
       "path": ".github/workflows/ci.yml",
-      "sha256": "dfd8ce6d5b7b83315373a1f1a93d292b5994e11878a4c6c47d4271482f6cd8eb"
+      "sha256": "456e6aad254a0d4b41400a015f1265de49f77697c59d5fe2bee11d75e4fcd0a9"
     },
     {
       "bytes": 681,
@@ -328,9 +328,9 @@
       "sha256": "1959557ecbeac44ea195c847277b4e65b443a86e1157ed286ce63504eb4d299e"
     },
     {
-      "bytes": 999,
+      "bytes": 1009,
       "path": "CONTRIBUTING.md",
-      "sha256": "a8dc7d953eef3528ea479aa0d7ec94f8a61595c8831fdef7d715cfbf63112bce"
+      "sha256": "6909ef6bc7eba5daf91908208035c4f3d9cc3c26747932f8c3f46247f8717412"
     },
     {
       "bytes": 1,
@@ -413,9 +413,9 @@
       "sha256": "d2ae99881dd75a86d9bbdfd2ff9ae2c3e1f2bc0006992e50e42fd9ffbaab75c4"
     },
     {
-      "bytes": 1915,
+      "bytes": 1925,
       "path": "docs/RELEASE_CHECKLIST.md",
-      "sha256": "e5b4716a77047bc4936538ec8961413d7fd03fc4225c3be1a09abf81274a617d"
+      "sha256": "2cc6c724a28b2e73c637562751f5401d949dbe37f52703dad261a39d9ebeb35c"
     },
     {
       "bytes": 1928,
@@ -423,9 +423,9 @@
       "sha256": "5348ffd6596f746a638637ae9ceeb427a7809da9d1f4c8ee8a2833edf35e58bd"
     },
     {
-      "bytes": 7875,
+      "bytes": 7905,
       "path": "docs/REPRODUCIBILITY.md",
-      "sha256": "93f3423fa1db44d28590b5e9d11e3341241270cb535b1f980e082f701394b0c6"
+      "sha256": "9a0cbb9a0667f5a1df594fa0f8aa1843d687feb8dea31f9598df2f2d97213a9d"
     },
     {
       "bytes": 1443,
@@ -463,9 +463,9 @@
       "sha256": "da3894672e068b6ddb2ae5eeeffd3f1202cc69e4e0e81e8459d5f05a9526dc12"
     },
     {
-      "bytes": 8127,
+      "bytes": 8147,
       "path": "README.md",
-      "sha256": "34a0a47ddc03344a51f279efcaf6c003a3c2b2a7bc257acbd8ce8f3633bd5c7f"
+      "sha256": "e7660bfa1de97eb432070025e3810d7c62fc7d6be710901bd292e6733b0292ee"
     },
     {
       "bytes": 78,

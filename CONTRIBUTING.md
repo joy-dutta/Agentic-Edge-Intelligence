@@ -13,7 +13,7 @@ Contributions that improve reproducibility, controller correctness, measurement 
 python scripts/secret_scan.py
 python scripts/verify_release.py
 python scripts/verify_docs.py
-pytest -q
+python -m pytest -q
 python scripts/verify_results.py
 ```
 

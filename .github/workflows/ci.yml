@@ -29,7 +29,7 @@ jobs:
       - name: Verify documentation links
         run: python scripts/verify_docs.py
       - name: Run offline tests
-        run: pytest -q
+        run: python -m pytest -q
         env:
           PYTHONPATH: src
       - name: Recompute and verify released result tables
