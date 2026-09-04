@@ -1,6 +1,6 @@
 # Repository Layout
 
-The repository is arranged so a first-time visitor can move from the research question to the evidence without guessing what a folder contains. Every main folder has a local README with its contents and common commands.
+The repository is arranged so a first-time visitor can move from the research question to the evidence without guessing what a folder contains. Every normal working folder has a local README with its contents and common commands. GitHub maintenance files use `.github/ABOUT.md` because GitHub would otherwise display a README from that folder in place of the project's main landing page.
 
 ```text
 .

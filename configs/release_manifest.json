@@ -1,6 +1,6 @@
 {
   "algorithm": "SHA-256",
-  "created_utc": "2026-09-04T22:41:24.402762+00:00",
+  "created_utc": "2026-09-04T22:46:26.634847+00:00",
   "files": [
     {
       "bytes": 353,
@@ -16,6 +16,11 @@
       "bytes": 161,
       "path": ".gitattributes",
       "sha256": "240695a3d04ea0c9482ba54826d5e6d383925c1b4f4dced19119b20c8e650a78"
+    },
+    {
+      "bytes": 1219,
+      "path": ".github/ABOUT.md",
+      "sha256": "235c299054b7a06db160b76a94617dac745c23507d67909b1285c79541e3b0e2"
     },
     {
       "bytes": 14,
@@ -46,11 +51,6 @@
       "bytes": 700,
       "path": ".github/pull_request_template.md",
       "sha256": "f980a9ffa49a8a846508984a1580543f62388308b787a909ceb761bd94152c6a"
-    },
-    {
-      "bytes": 1219,
-      "path": ".github/README.md",
-      "sha256": "235c299054b7a06db160b76a94617dac745c23507d67909b1285c79541e3b0e2"
     },
     {
       "bytes": 1136,
@@ -468,9 +468,9 @@
       "sha256": "2cc6c724a28b2e73c637562751f5401d949dbe37f52703dad261a39d9ebeb35c"
     },
     {
-      "bytes": 2896,
+      "bytes": 3064,
       "path": "docs/REPOSITORY_LAYOUT.md",
-      "sha256": "80a832729625414258ab39375a6529fef39de38f1648ccf0f937b12c9d35b47f"
+      "sha256": "a24778a4d8d9a70626741c7fb66cc664d78257ecbdbe01d18bc544cb8bf1de69"
     },
     {
       "bytes": 8497,
