@@ -6,10 +6,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /workspace
-COPY requirements-network.lock ./
+COPY requirements/network.lock ./requirements/network.lock
 COPY src ./src
 COPY scripts ./scripts
-RUN python3 -m pip install --no-cache-dir -r requirements-network.lock
+RUN python3 -m pip install --no-cache-dir -r requirements/network.lock
 
 ENV PYTHONPATH=/workspace/src
 ENTRYPOINT []

@@ -50,6 +50,22 @@ The completed evaluation demonstrates that:
 
 Exact estimates, confidence intervals, statistical tests, and interpretation boundaries are reported in [docs/RESULTS.md](docs/RESULTS.md). Machine-readable values are under [`artifacts/tables`](artifacts/tables).
 
+## Find What You Need
+
+You do not need to understand the whole repository before using it. Start with the row that matches your goal; every linked folder has its own README explaining the files inside and the next command to run.
+
+| I want to... | Start here |
+|---|---|
+| Understand the experiment and its seven controllers | [Experiment design](docs/EXPERIMENT_DESIGN.md) |
+| Verify the released results without SUMO or an API key | [Processed data](data/processed/README.md) and [result tables](artifacts/tables/README.md) |
+| Reproduce the simulation | [Reproducibility guide](docs/REPRODUCIBILITY.md) |
+| Understand where raw outputs come from | [Raw-output guide](artifacts/raw/README.md) |
+| Inspect or change a frozen setting | [Configuration guide](configs/README.md) |
+| Understand the implementation | [Source-code guide](src/ojcoms_poc/README.md) |
+| Find the right command | [Script guide](scripts/README.md) |
+| Use the containers or network harness | [Docker guide](docker/README.md) |
+| Run or extend the tests | [Test guide](tests/README.md) |
+
 ## Reproducibility Paths
 
 Choose the level that matches what you want to verify:
@@ -70,12 +86,12 @@ Docker on Linux or WSL2 is the recommended path because it isolates SUMO and Pyt
 git clone https://github.com/joy-dutta/Agentic-Edge-Intelligence.git
 cd Agentic-Edge-Intelligence
 
-docker compose build experiment
-docker compose run --rm experiment python scripts/verify_release.py
-docker compose run --rm experiment python -m pytest -q
-docker compose run --rm experiment python scripts/verify_results.py
-docker compose run --rm experiment python scripts/fetch_resco.py
-docker compose run --rm experiment python scripts/pilot.py --mode offline --phase pilot
+docker compose -f docker/compose.yaml build experiment
+docker compose -f docker/compose.yaml run --rm experiment python scripts/verify_release.py
+docker compose -f docker/compose.yaml run --rm experiment python -m pytest -q
+docker compose -f docker/compose.yaml run --rm experiment python scripts/verify_results.py
+docker compose -f docker/compose.yaml run --rm experiment python scripts/fetch_resco.py
+docker compose -f docker/compose.yaml run --rm experiment python scripts/pilot.py --mode offline --phase pilot
 ```
 
 The RESCO source is downloaded at its pinned commit and patched locally. It is not redistributed because its upstream CC-BY-NC-SA-3.0 terms remain authoritative.
@@ -88,7 +104,7 @@ Python 3.12 is required.
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.lock
+python -m pip install -r requirements/base.lock
 python -m pip install --no-deps -e .
 
 python scripts/verify_release.py
@@ -110,6 +126,7 @@ On PowerShell, activate the environment with `.venv\Scripts\Activate.ps1`. Use a
 - [Scenario provenance](scenarios/README.md): RESCO source, commit, patch, and scenario construction.
 - [Network harness](docs/network_harness.md): TLS/MQTT, `tc netem`, and packet-capture validation.
 - [Repository layout](docs/REPOSITORY_LAYOUT.md): where to find code, configurations, outputs, and tests.
+- [Documentation index](docs/README.md): a plain-language guide to every document.
 
 ## Reproducibility Commitments
 
@@ -132,4 +149,4 @@ Researchers who use this repository, its experimental methodology, released resu
 
 ## License and Citation
 
-Repository code is released under the [MIT License](LICENSE). RESCO scenarios retain their upstream license. To cite the software, use [`CITATION.cff`](CITATION.cff).
+Repository code is released under the [MIT License](LICENSE). RESCO scenarios retain their upstream license. To cite the software, use [`CITATION.cff`](CITATION.cff). Contributions are described in [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md), and private vulnerability reports are covered by [.github/SECURITY.md](.github/SECURITY.md).

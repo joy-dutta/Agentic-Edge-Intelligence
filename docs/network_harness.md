@@ -10,11 +10,11 @@ jitter, and packet loss are divided across both endpoint egress paths.
 Run it under Linux or WSL2 with Docker Compose:
 
 ```bash
-ARCHITECTURE=edge docker compose up --build -d
-docker wait "$(docker compose ps -q simulator-controller)"
-docker compose stop pcap
+ARCHITECTURE=edge docker compose -f docker/compose.yaml up --build -d
+docker wait "$(docker compose -f docker/compose.yaml ps -q simulator-controller)"
+docker compose -f docker/compose.yaml stop pcap
 python scripts/reconcile_pcap.py --architecture edge
-docker compose down
+docker compose -f docker/compose.yaml down
 ```
 
 Repeat with `ARCHITECTURE=cloud`, moving the first PCAP and result files to a

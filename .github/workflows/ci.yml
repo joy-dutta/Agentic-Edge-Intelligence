@@ -20,7 +20,7 @@ jobs:
           cache: pip
       - name: Install pinned dependencies
         run: |
-          python -m pip install -r requirements.lock
+          python -m pip install -r requirements/base.lock
           python -m pip install --no-deps -e .
       - name: Scan for credentials
         run: python scripts/secret_scan.py
@@ -43,6 +43,6 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Build pinned reproducibility container
-        run: docker build --file Dockerfile.release --tag agentic-edge-traffic-poc:ci .
+        run: docker build --file docker/release.Dockerfile --tag agentic-edge-traffic-poc:ci .
       - name: Verify package inside the container
         run: docker run --rm agentic-edge-traffic-poc:ci python scripts/verify_release.py

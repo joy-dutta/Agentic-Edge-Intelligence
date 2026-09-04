@@ -120,7 +120,7 @@
     "action_set": "Phase",
     "episodes": 100,
     "converged": null,
-    "log_dir": "/Users/joydu/AppData/Local/Temp/idqntrain2",
+    "log_dir": "artifacts/idqn_training",
     "gui": false,
     "libsumo": false,
     "load_sim": null,
@@ -795,7 +795,7 @@
     "reward_aggregation": "sum",
     "reward_scale": -1,
     "seed_cycle": 10,
-    "benchmark_path": "C:\\Users\\joydu\\OneDrive\\Documents\\Agentic Edge Intelligence\\ojcoms_poc_v2\\external\\RESCO",
+    "benchmark_path": "external/RESCO",
     "map": "cologne8",
     "algorithm": "IDQN",
     "uuid": "263ce37e-ea67-415b-bd48-693c0a38a4b8"

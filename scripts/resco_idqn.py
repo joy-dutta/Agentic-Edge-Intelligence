@@ -100,8 +100,13 @@ def package(training_root: Path, training_log: Path, repository: Path) -> None:
         "resco_commit": "f1ed9a174f8de41fc9d8689373b836bc882570dc",
         "episodes": 100,
         "training_seeds": list(range(101, 111)),
-        "source_temp_directory": str(training_root),
-        "excluded_interrupted_branch": "C:/Users/joydu/idqntrain episodes 21-38 after checkpoint 20",
+        "source_temp_directory": (
+            "not retained; released files are stored in this checkpoint directory"
+        ),
+        "excluded_interrupted_branch": (
+            "episodes 21-38 after checkpoint 20 "
+            "(excluded from the final uninterrupted training set)"
+        ),
         "files_sha256": {
             path.name: sha256(path)
             for path in sorted(destination.iterdir())

@@ -2,21 +2,23 @@ services:
   experiment:
     profiles: ["experiment"]
     build:
-      context: .
-      dockerfile: Dockerfile.release
+      context: ..
+      dockerfile: docker/release.Dockerfile
     image: agentic-edge-traffic-poc:1.0.0
     working_dir: /workspace
     environment:
       PYTHONPATH: /workspace/src
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
     volumes:
-      - .:/workspace
+      - ..:/workspace
 
   tls-init:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/network-harness.Dockerfile
     command: ["python3", "scripts/generate_mqtt_tls.py", "--output", "/tls"]
     volumes:
-      - ./artifacts/network_tls:/tls
+      - ../artifacts/network_tls:/tls
 
   broker:
     image: eclipse-mosquitto:2.0.22@sha256:212f89e1eaeb2c322d6441b64396e3346026674db8fa9c27beac293405c32b3c
@@ -24,8 +26,8 @@ services:
       tls-init:
         condition: service_completed_successfully
     volumes:
-      - ./network/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
-      - ./artifacts/network_tls:/mosquitto/certs
+      - ../network/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ../artifacts/network_tls:/mosquitto/certs
     healthcheck:
       test: ["CMD-SHELL", "mosquitto_pub --cafile /mosquitto/certs/ca.crt -h broker -p 8883 -t health -m ok || exit 1"]
       interval: 2s
@@ -41,10 +43,12 @@ services:
     command: ["tcpdump", "-i", "any", "-s", "0", "-U", "-w", "/pcap/network_harness.pcap", "tcp", "port", "8883"]
     cap_add: [NET_ADMIN, NET_RAW]
     volumes:
-      - ./artifacts/pcap:/pcap
+      - ../artifacts/pcap:/pcap
 
   edge-agent:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/network-harness.Dockerfile
     depends_on:
       broker:
         condition: service_healthy
@@ -61,11 +65,13 @@ services:
       MQTT_CA: /tls/ca.crt
       HARNESS_OUTPUT: /artifacts/network
     volumes:
-      - ./artifacts/network_tls:/tls:ro
-      - ./artifacts:/artifacts
+      - ../artifacts/network_tls:/tls:ro
+      - ../artifacts:/artifacts
 
   cloud-controller:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/network-harness.Dockerfile
     depends_on:
       broker:
         condition: service_healthy
@@ -82,11 +88,13 @@ services:
       MQTT_CA: /tls/ca.crt
       HARNESS_OUTPUT: /artifacts/network
     volumes:
-      - ./artifacts/network_tls:/tls:ro
-      - ./artifacts:/artifacts
+      - ../artifacts/network_tls:/tls:ro
+      - ../artifacts:/artifacts
 
   simulator-controller:
-    build: .
+    build:
+      context: ..
+      dockerfile: docker/network-harness.Dockerfile
     depends_on:
       broker:
         condition: service_healthy
@@ -112,5 +120,5 @@ services:
       MQTT_CA: /tls/ca.crt
       HARNESS_OUTPUT: /artifacts/network
     volumes:
-      - ./artifacts/network_tls:/tls:ro
-      - ./artifacts:/artifacts
+      - ../artifacts/network_tls:/tls:ro
+      - ../artifacts:/artifacts

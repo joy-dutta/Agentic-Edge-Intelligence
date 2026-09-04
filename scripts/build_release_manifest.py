@@ -12,13 +12,15 @@ OUTPUT = ROOT / "configs" / "release_manifest.json"
 
 PUBLIC_ROOTS = (
     ".github",
-    "artifacts/tables",
+    "artifacts",
     "checkpoints",
     "configs",
-    "data/processed",
+    "data",
     "docs",
+    "docker",
     "network",
     "patches",
+    "requirements",
     "scenarios",
     "scripts",
     "src",
@@ -30,20 +32,10 @@ TOP_LEVEL = (
     ".env.example",
     ".gitattributes",
     ".gitignore",
-    "CHANGELOG.md",
     "CITATION.cff",
-    "CONTRIBUTING.md",
-    "Dockerfile",
-    "Dockerfile.experiment",
-    "Dockerfile.release",
     "LICENSE",
     "README.md",
-    "SECURITY.md",
-    "docker-compose.yml",
     "pyproject.toml",
-    "requirements-idqn.lock",
-    "requirements-network.lock",
-    "requirements.lock",
 )
 
 EXCLUDED = {

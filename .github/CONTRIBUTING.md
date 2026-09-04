@@ -4,6 +4,8 @@ Contributions that improve reproducibility, controller correctness, measurement 
 
 ## Development Workflow
 
+The [root README](../README.md) gives the project overview, and [`scripts/README.md`](../scripts/README.md) explains which command owns each workflow.
+
 1. Create a focused branch.
 2. Keep confirmatory behavior unchanged unless the change is explicitly versioned as a new protocol.
 3. Add or update tests for every behavioral change.

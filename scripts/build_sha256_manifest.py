@@ -12,7 +12,9 @@ INCLUDED = (
     "data/processed",
     "checkpoints",
     "configs",
+    "docker",
     "patches",
+    "requirements",
     "src",
     "scripts",
     "tests",
@@ -21,11 +23,7 @@ INCLUDED = (
 TOP_LEVEL = (
     "README.md",
     "CITATION.cff",
-    "Dockerfile",
-    "docker-compose.yml",
     "pyproject.toml",
-    "requirements.lock",
-    "requirements-idqn.lock",
 )
 
 

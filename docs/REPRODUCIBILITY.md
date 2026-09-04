@@ -15,7 +15,7 @@ Native alternative:
 
 - Python 3.12.
 - A C/C++ compatible host for the pinned Python wheels.
-- SUMO 1.27.1, installed by `requirements.lock`.
+- SUMO 1.27.1, installed by `requirements/base.lock`.
 
 The completed evaluation used CPU execution. No GPU is required for SUMO or the API-hosted supervisor.
 
@@ -32,11 +32,11 @@ A fresh clone should have an empty status.
 ## Docker Environment
 
 ```bash
-docker compose build experiment
-docker compose run --rm experiment python --version
-docker compose run --rm experiment python scripts/verify_release.py
-docker compose run --rm experiment python -m pytest -q
-docker compose run --rm experiment python scripts/verify_results.py
+docker compose -f docker/compose.yaml build experiment
+docker compose -f docker/compose.yaml run --rm experiment python --version
+docker compose -f docker/compose.yaml run --rm experiment python scripts/verify_release.py
+docker compose -f docker/compose.yaml run --rm experiment python -m pytest -q
+docker compose -f docker/compose.yaml run --rm experiment python scripts/verify_results.py
 ```
 
 Expected high-level checks:
@@ -56,7 +56,7 @@ Linux/WSL2:
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install -r requirements.lock
+python -m pip install -r requirements/base.lock
 python -m pip install --no-deps -e .
 export PYTHONPATH="$PWD/src"
 ```
@@ -67,7 +67,7 @@ PowerShell:
 py -3.12 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -r requirements.lock
+python -m pip install -r requirements/base.lock
 python -m pip install --no-deps -e .
 $env:PYTHONPATH = (Resolve-Path 'src')
 ```
@@ -207,11 +207,11 @@ The follow-up uses disjoint seeds and remains separate from the confirmatory mat
 The TLS/MQTT harness requires Linux networking capabilities and Docker Compose:
 
 ```bash
-ARCHITECTURE=edge docker compose up --build -d
-docker wait "$(docker compose ps -q simulator-controller)"
-docker compose stop pcap
+ARCHITECTURE=edge docker compose -f docker/compose.yaml up --build -d
+docker wait "$(docker compose -f docker/compose.yaml ps -q simulator-controller)"
+docker compose -f docker/compose.yaml stop pcap
 python scripts/reconcile_pcap.py --architecture edge
-docker compose down
+docker compose -f docker/compose.yaml down
 ```
 
 Repeat with `ARCHITECTURE=cloud`. See [network_harness.md](network_harness.md) for shaping assumptions and reconciliation rules.
@@ -221,7 +221,7 @@ Repeat with `ARCHITECTURE=cloud`. See [network_harness.md](network_harness.md) f
 The supplied checkpoints can be evaluated with the additional pinned dependency set:
 
 ```bash
-python -m pip install -r requirements-idqn.lock
+python -m pip install -r requirements/idqn.lock
 python scripts/resco_idqn.py --help
 python scripts/analyze_idqn.py
 ```
@@ -237,6 +237,8 @@ The IDQN study is separate from the seven-controller confirmatory matrix.
 | `artifacts/logs/api_usage*.jsonl` | Append-only usage and reservation ledger |
 | `data/processed/run_level_results.csv` | Confirmatory analysis frame |
 | `artifacts/tables/*.csv` | Statistical tables and audit outputs |
+
+The raw run archive is intentionally regenerated rather than stored in Git because the completed archive contains more than 10,000 generated files and is approximately 3.3 GiB. The included processed run-level files are sufficient for Level A verification. See [`artifacts/raw/README.md`](../artifacts/raw/README.md) for the exact raw layout and regeneration commands.
 
 ## Final Reproduction Checks
 

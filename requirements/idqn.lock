@@ -1,4 +1,4 @@
--r requirements.lock
+-r base.lock
 torch==2.13.0
 pfrl==0.4.0
 gym==0.26.2

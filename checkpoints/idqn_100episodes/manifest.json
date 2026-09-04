@@ -1,6 +1,6 @@
 {
   "episodes": 100,
-  "excluded_interrupted_branch": "C:/Users/joydu/idqntrain episodes 21-38 after checkpoint 20",
+  "excluded_interrupted_branch": "episodes 21-38 after checkpoint 20 (excluded from the final uninterrupted training set)",
   "files_sha256": {
     "agt_247379907.pt": "b223988ee088010543425fc5ec13ee344652fc0609e9def2729bbc97ae1d5755",
     "agt_252017285.pt": "c705bc6f7409dd12a33c46030a27b4a453c17c1adc021e0a8aae535ef5bdaf75",
@@ -10,12 +10,11 @@
     "agt_32319828.pt": "dffdd348274bc66510be71fad8b8b47d78283580d0cc70101a9821b71fa60e76",
     "agt_62426694.pt": "91a73e01af9b0d6944477b9a25bcada072de57d469f52ad09c1e530fbe9465c6",
     "agt_cluster_1098574052_1098574061_247379905.pt": "e60e79835f7d967fe91417dde125f16f94e274b70d31b3146d3614c34af3b436",
-    "learning_curve.csv": "e9e6e2ae0de1de68b87655970c853736dafac95e1316b4b30a7590fea4ee1485",
-    "manifest.json": "4747061f2e99661426bbe7536df237e03fb4840cad0b18ee92e34fc98258d8cf",
-    "resco_training_config.json": "9a8a23e2a420c51dc9da4432810f95de28fd747954810332e13ff9945415f895"
+    "learning_curve.csv": "20d5349ce8312ed29a14e074cebfc4dcb28aec9ab31ca6f0da2be3a760401229",
+    "resco_training_config.json": "553b6abacfa7fb4ac0c72286d36d934eaf5151d2933cc9ff43d1a3428fd62b71"
   },
   "resco_commit": "f1ed9a174f8de41fc9d8689373b836bc882570dc",
-  "source_temp_directory": "C:\\Users\\joydu\\AppData\\Local\\Temp\\idqntrain2",
+  "source_temp_directory": "not retained; released files are stored in this checkpoint directory",
   "training_seeds": [
     101,
     102,

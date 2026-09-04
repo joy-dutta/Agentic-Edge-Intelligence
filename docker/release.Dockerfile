@@ -17,8 +17,9 @@ RUN apt-get update \
         libxrender1 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.lock pyproject.toml README.md LICENSE ./
-RUN python -m pip install --no-cache-dir -r requirements.lock
+COPY requirements/base.lock ./requirements/base.lock
+COPY pyproject.toml README.md LICENSE ./
+RUN python -m pip install --no-cache-dir -r requirements/base.lock
 
 COPY . .
 RUN python -m pip install --no-cache-dir --no-deps -e .
@@ -26,4 +27,3 @@ RUN python -m pip install --no-cache-dir --no-deps -e .
 ENV PYTHONPATH=/workspace/src
 ENTRYPOINT []
 CMD ["python", "scripts/verify_release.py"]
-
